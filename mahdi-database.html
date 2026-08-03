@@ -23,7 +23,6 @@
             --gold: #a67c2e;
             --gold-light: #c9a84c;
             --gold-border: #c9a84c;
-            --gold-glow: rgba(166,124,46,0.3);
             --border-subtle: #d6cdc2;
             --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
             --radius: 16px;
@@ -36,7 +35,6 @@
             --font-arabic: 'Amiri', 'Times New Roman', serif;
             --transition: 0.2s ease;
         }
-
         [data-theme="dark"] {
             --bg-body: #0d0b0a;
             --bg-container: #161312;
@@ -51,517 +49,128 @@
             --gold: #f5d77b;
             --gold-light: #f5d77b;
             --gold-border: #b8963a;
-            --gold-glow: rgba(245,215,123,0.3);
             --border-subtle: #2e2824;
             --shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
             --true: #b5c99e;
             --false: #d48c7a;
             --source: #c2b59e;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        ::selection {
-            background: var(--gold);
-            color: #fff;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        ::selection { background: var(--gold); color: #fff; }
+        html { scroll-behavior: smooth; }
         body {
-            background: var(--bg-body);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            font-size: clamp(1rem, 1.1vw + 0.7rem, 1.15rem);
-            line-height: 1.7;
-            padding: 1.5rem 1rem;
-            transition: background var(--transition), color var(--transition);
-            min-height: 100vh;
+            background: var(--bg-body); color: var(--text-primary); font-family: var(--font-sans);
+            font-size: clamp(1rem, 1.1vw + 0.7rem, 1.15rem); line-height: 1.7; padding: 1.5rem 1rem;
+            transition: background var(--transition), color var(--transition); min-height: 100vh;
         }
-
         .container {
-            max-width: 960px;
-            margin: 0 auto;
-            background: var(--bg-container);
-            padding: clamp(1.5rem, 3.5vw, 2.8rem) clamp(1rem, 2.5vw, 2.2rem);
-            border-radius: var(--radius);
-            border: 1px solid var(--border-subtle);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            max-width: 960px; margin: 0 auto; background: var(--bg-container);
+            padding: clamp(1.5rem, 3.5vw, 2.8rem) clamp(1rem, 2.5vw, 2.2rem); border-radius: var(--radius);
+            border: 1px solid var(--border-subtle); box-shadow: 0 8px 30px rgba(0,0,0,0.06);
             transition: background var(--transition), border var(--transition);
         }
-
-        .top-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-bottom: 2rem;
-        }
-
+        .top-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 2rem; }
         .btn-icon {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--bg-card);
-            border: 1px solid var(--gold-border);
-            border-radius: 30px;
-            padding: 0.5rem 1.2rem;
-            font-family: var(--font-sans);
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--gold);
-            text-decoration: none;
-            transition: all var(--transition);
-            cursor: pointer;
+            display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card);
+            border: 1px solid var(--gold-border); border-radius: 30px; padding: 0.5rem 1.2rem;
+            font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; color: var(--gold);
+            text-decoration: none; transition: all var(--transition); cursor: pointer;
         }
-
-        .btn-icon:hover {
-            background: var(--gold);
-            color: #000;
-            border-color: var(--gold);
-        }
-
-        .btn-icon svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-            flex-shrink: 0;
-        }
-
+        .btn-icon:hover { background: var(--gold); color: #000; border-color: var(--gold); }
+        .btn-icon svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
         .theme-toggle {
-            background: var(--bg-card);
-            border: 1px solid var(--border-subtle);
-            border-radius: 30px;
-            padding: 0.5rem 1.2rem;
-            font-family: var(--font-sans);
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-            transition: all var(--transition);
+            background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 30px;
+            padding: 0.5rem 1.2rem; font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500;
+            color: var(--text-secondary); display: inline-flex; align-items: center; gap: 0.5rem;
+            cursor: pointer; transition: all var(--transition);
         }
-
-        .theme-toggle:hover {
-            background: var(--gold);
-            color: #000;
-            border-color: var(--gold);
-        }
-
-        .theme-toggle svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-            flex-shrink: 0;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
+        .theme-toggle:hover { background: var(--gold); color: #000; border-color: var(--gold); }
+        .theme-toggle svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+        header { text-align: center; margin-bottom: 1.5rem; }
         h1 {
-            font-family: var(--font-serif);
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: var(--gold);
-            line-height: 1.15;
+            font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700;
+            letter-spacing: 1px; color: var(--gold); line-height: 1.15;
         }
-
-        h1 small {
-            display: block;
-            font-size: clamp(0.9rem, 1.8vw, 1.2rem);
-            font-weight: 400;
-            color: var(--text-secondary);
-            letter-spacing: 2px;
-            margin-top: 0.2rem;
-        }
-
+        h1 small { display: block; font-size: clamp(0.9rem, 1.8vw, 1.2rem); font-weight: 400; color: var(--text-secondary); letter-spacing: 2px; margin-top: 0.2rem; }
         h2 {
-            font-family: var(--font-serif);
-            font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-            font-weight: 700;
-            color: var(--gold);
-            margin: 2.5rem 0 1rem 0;
-            border-bottom: 2px solid var(--border-subtle);
-            padding-bottom: 0.3rem;
+            font-family: var(--font-serif); font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 700;
+            color: var(--gold); margin: 2.5rem 0 1rem 0; border-bottom: 2px solid var(--border-subtle); padding-bottom: 0.3rem;
         }
-
-        h3 {
-            font-family: var(--font-serif);
-            font-size: clamp(1.2rem, 2vw, 1.5rem);
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin: 1.8rem 0 0.8rem 0;
-        }
-
-        p {
-            margin-bottom: 0.8rem;
-        }
-
-        .highlight {
-            color: var(--gold);
-            font-weight: 600;
-        }
-
+        h3 { font-family: var(--font-serif); font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; color: var(--text-secondary); margin: 1.8rem 0 0.8rem 0; }
+        p { margin-bottom: 0.8rem; }
+        .highlight { color: var(--gold); font-weight: 600; }
         .ayah-box {
-            background: var(--bg-ayah);
-            border-left: 4px solid var(--gold-border);
-            padding: 1.2rem 1.8rem;
-            margin: 1.8rem 0;
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-            transition: background var(--transition), border var(--transition);
+            background: var(--bg-ayah); border-left: 4px solid var(--gold-border); padding: 1.2rem 1.8rem;
+            margin: 1.8rem 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; transition: background var(--transition), border var(--transition);
         }
-
-        .ayah-box .arabic {
-            font-family: var(--font-arabic);
-            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-            line-height: 2.2;
-            text-align: right;
-            direction: rtl;
-            color: var(--text-arabic);
-            margin-bottom: 0.3rem;
+        .ayah-box .arabic { font-family: var(--font-arabic); font-size: clamp(1.3rem, 2.5vw, 1.8rem); line-height: 2.2; text-align: right; direction: rtl; color: var(--text-arabic); margin-bottom: 0.3rem; }
+        .ayah-box .translation { font-style: italic; color: var(--text-secondary); border-top: 1px solid var(--border-subtle); padding-top: 0.6rem; font-size: clamp(0.9rem, 1.1vw, 1rem); }
+        .ayah-box .translation strong { color: var(--text-primary); font-style: normal; }
+        .ayah-box .source { font-size: 0.85rem; color: var(--source); margin-top: 0.5rem; }
+        .ayah-box .source a { color: var(--gold); text-decoration: none; border-bottom: 1px dotted var(--gold-border); }
+        .ayah-box .source a:hover { border-bottom: 2px solid var(--gold); }
+        .hadith-inline {
+            display: inline-block; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: 6px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 500;
+            color: var(--source); margin-left: 0.3rem; white-space: nowrap;
         }
-
-        .ayah-box .translation {
-            font-style: italic;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-subtle);
-            padding-top: 0.6rem;
-            font-size: clamp(0.9rem, 1.1vw, 1rem);
-        }
-
-        .ayah-box .translation strong {
-            color: var(--text-primary);
-            font-style: normal;
-        }
-
-        .ayah-box .source {
-            font-size: 0.85rem;
-            color: var(--source);
-            margin-top: 0.5rem;
-        }
-
-        .ayah-box .source a {
-            color: var(--gold);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--gold-border);
-        }
-
-        .ayah-box .source a:hover {
-            border-bottom: 2px solid var(--gold);
-        }
-
-        .proof-steps {
-            list-style: none;
-            padding-left: 0;
-            margin: 1.5rem 0;
-        }
-
-        .proof-steps li {
-            background: var(--bg-card);
-            border: 1px solid var(--border-subtle);
-            padding: 1rem 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: var(--radius-sm);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .step-num {
-            display: inline-block;
-            background: var(--gold);
-            color: #000;
-            font-weight: 700;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            border-radius: 50%;
-            margin-right: 0.6rem;
-            font-size: 0.9rem;
-            font-family: var(--font-sans);
-        }
-
-        .table-wrap {
-            overflow-x: auto;
-            margin: 1.8rem 0;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--border-subtle);
-            background: var(--bg-card);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: clamp(0.8rem, 1vw + 0.1rem, 0.95rem);
-            min-width: 600px;
-        }
-
-        th {
-            background: var(--bg-table-header);
-            color: var(--gold);
-            font-weight: 600;
-            padding: 0.8rem 0.8rem;
-            text-align: left;
-            border-bottom: 2px solid var(--gold-border);
-            font-family: var(--font-sans);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-            white-space: nowrap;
-        }
-
-        td {
-            padding: 0.8rem;
-            border-bottom: 1px solid var(--border-subtle);
-            vertical-align: top;
-            color: var(--text-primary);
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        tr:hover {
-            background: var(--bg-ayah);
-        }
-
-        .sahih {
-            color: var(--true);
-            font-weight: 600;
-        }
-
-        .hasan {
-            color: #b8963a;
-            font-weight: 600;
-        }
-
-        .check {
-            color: var(--true);
-            font-weight: 600;
-        }
-
-        .cross {
-            color: var(--false);
-            font-weight: 600;
-        }
-
-        .ref-link {
-            color: var(--gold);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--gold-border);
-        }
-
-        .ref-link:hover {
-            border-bottom: 2px solid var(--gold);
-        }
-
-        .imam-card-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            justify-content: center;
-            margin: 1.5rem 0;
-        }
-
-        .imam-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-sm);
-            padding: 0.8rem 1.2rem;
-            text-align: center;
-            min-width: 110px;
-            box-shadow: var(--shadow-sm);
-            transition: all 0.15s;
-        }
-
-        .imam-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--gold);
-        }
-
-        .imam-card .name {
-            font-weight: 700;
-            color: var(--gold);
-            font-size: 1.1rem;
-            font-family: var(--font-serif);
-        }
-
-        .imam-card .title {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            margin-top: 0.1rem;
-        }
-
+        .hadith-inline a { color: var(--gold); text-decoration: none; }
+        .hadith-inline a:hover { text-decoration: underline; }
+        .proof-steps { list-style: none; padding-left: 0; margin: 1.5rem 0; }
+        .proof-steps li { background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 1rem 1.5rem; margin-bottom: 1rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
+        .step-num { display: inline-block; background: var(--gold); color: #000; font-weight: 700; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; margin-right: 0.6rem; font-size: 0.9rem; font-family: var(--font-sans); }
+        .table-wrap { overflow-x: auto; margin: 1.8rem 0; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: var(--bg-card); }
+        table { width: 100%; border-collapse: collapse; font-size: clamp(0.8rem, 1vw + 0.1rem, 0.95rem); min-width: 600px; }
+        th { background: var(--bg-table-header); color: var(--gold); font-weight: 600; padding: 0.8rem 0.8rem; text-align: left; border-bottom: 2px solid var(--gold-border); font-family: var(--font-sans); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; }
+        td { padding: 0.8rem; border-bottom: 1px solid var(--border-subtle); vertical-align: top; color: var(--text-primary); }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background: var(--bg-ayah); }
+        .sahih { color: var(--true); font-weight: 600; }
+        .hasan { color: #b8963a; font-weight: 600; }
+        .check { color: var(--true); font-weight: 600; }
+        .cross { color: var(--false); font-weight: 600; }
+        .ref-link { color: var(--gold); text-decoration: none; border-bottom: 1px dotted var(--gold-border); }
+        .ref-link:hover { border-bottom: 2px solid var(--gold); }
+        .imam-card-list { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin: 1.5rem 0; }
+        .imam-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.8rem 1.2rem; text-align: center; min-width: 110px; box-shadow: var(--shadow-sm); transition: all 0.15s; }
+        .imam-card:hover { transform: translateY(-2px); border-color: var(--gold); }
+        .imam-card .name { font-weight: 700; color: var(--gold); font-size: 1.1rem; font-family: var(--font-serif); }
+        .imam-card .title { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.1rem; }
         #searchInput {
-            padding: 0.7rem 1.2rem;
-            border-radius: 30px;
-            border: 1px solid var(--border-subtle);
-            background: var(--bg-card);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            width: 80%;
-            max-width: 500px;
-            outline: none;
-            display: block;
-            margin: 1.5rem auto;
+            padding: 0.7rem 1.2rem; border-radius: 30px; border: 1px solid var(--border-subtle);
+            background: var(--bg-card); color: var(--text-primary); font-family: var(--font-sans);
+            font-size: 1rem; width: 80%; max-width: 500px; outline: none; display: block; margin: 1.5rem auto;
             transition: all var(--transition);
         }
-
-        #searchInput:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px var(--gold-glow);
-        }
-
-        ul.clean-list {
-            list-style: none;
-            padding-left: 0;
-            margin: 1.2rem 0;
-        }
-
-        ul.clean-list li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid var(--border-subtle);
-            color: var(--text-primary);
-        }
-
-        ul.clean-list li:last-child {
-            border-bottom: none;
-        }
-
-        ul.clean-list li .marker {
-            color: var(--gold);
-            font-weight: 700;
-            margin-right: 0.5rem;
-        }
-
-        .faq-item {
-            background: var(--bg-faq);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-sm);
-            margin-bottom: 0.8rem;
-            padding: 1rem 1.5rem;
-            transition: background var(--transition), border var(--transition);
-        }
-
-        .faq-item h3 {
-            margin: 0 0 0.3rem 0;
-            font-size: 1.1rem;
-            color: var(--gold);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: var(--font-serif);
-        }
-
-        .faq-item h3::after {
-            content: "▼";
-            font-size: 0.7rem;
-            transition: transform 0.2s ease;
-        }
-
-        .faq-item.open h3::after {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            display: none;
-            padding-top: 0.6rem;
-            border-top: 1px solid var(--border-subtle);
-            margin-top: 0.3rem;
-        }
-
-        .faq-item.open .faq-answer {
-            display: block;
-        }
-
-        .footer-note {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-subtle);
-            font-size: 0.9rem;
-            color: var(--source);
-        }
-
-        .footer-note a {
-            color: var(--gold);
-            text-decoration: none;
-        }
-
+        #searchInput:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(166,124,46,0.3); }
+        ul.clean-list { list-style: none; padding-left: 0; margin: 1.2rem 0; }
+        ul.clean-list li { padding: 0.6rem 0; border-bottom: 1px solid var(--border-subtle); color: var(--text-primary); }
+        ul.clean-list li:last-child { border-bottom: none; }
+        ul.clean-list li .marker { color: var(--gold); font-weight: 700; margin-right: 0.5rem; }
+        .faq-item { background: var(--bg-faq); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); margin-bottom: 0.8rem; padding: 1rem 1.5rem; transition: background var(--transition), border var(--transition); }
+        .faq-item h3 { margin: 0 0 0.3rem 0; font-size: 1.1rem; color: var(--gold); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-serif); }
+        .faq-item h3::after { content: "▼"; font-size: 0.7rem; transition: transform 0.2s ease; }
+        .faq-item.open h3::after { transform: rotate(180deg); }
+        .faq-answer { display: none; padding-top: 0.6rem; border-top: 1px solid var(--border-subtle); margin-top: 0.3rem; }
+        .faq-item.open .faq-answer { display: block; }
+        .footer-note { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); font-size: 0.9rem; color: var(--source); }
+        .footer-note a { color: var(--gold); text-decoration: none; }
         .back-to-top {
-            position: fixed;
-            bottom: 1.5rem;
-            right: 1.5rem;
-            background: var(--gold);
-            color: #000;
-            border: none;
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-            transition: opacity 0.25s, transform 0.25s, background 0.25s;
-            opacity: 0;
-            transform: translateY(16px);
-            pointer-events: none;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position: fixed; bottom: 1.5rem; right: 1.5rem; background: var(--gold); color: #000; border: none;
+            border-radius: 50%; width: 44px; height: 44px; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            transition: opacity 0.25s, transform 0.25s, background 0.25s; opacity: 0; transform: translateY(16px);
+            pointer-events: none; z-index: 1000; display: flex; align-items: center; justify-content: center;
         }
-
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-
-        .back-to-top:hover {
-            background: var(--gold-light);
-        }
-
-        .back-to-top svg {
-            width: 22px;
-            height: 22px;
-            fill: currentColor;
-        }
-
+        .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+        .back-to-top:hover { background: var(--gold-light); }
+        .back-to-top svg { width: 22px; height: 22px; fill: currentColor; }
         @media (max-width: 600px) {
-            body {
-                padding: 0.5rem 0.3rem;
-                font-size: 0.95rem;
-            }
-            .container {
-                padding: 1rem 0.7rem;
-                border-radius: 12px;
-            }
-            .top-row {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .btn-icon, .theme-toggle {
-                justify-content: center;
-            }
-            .imam-card {
-                min-width: 90px;
-                padding: 0.6rem 0.8rem;
-            }
-            .imam-card .name {
-                font-size: 0.95rem;
-            }
+            body { padding: 0.5rem 0.3rem; font-size: 0.95rem; }
+            .container { padding: 1rem 0.7rem; border-radius: 12px; }
+            .top-row { flex-direction: column; align-items: stretch; }
+            .btn-icon, .theme-toggle { justify-content: center; }
+            .imam-card { min-width: 90px; padding: 0.6rem 0.8rem; }
+            .imam-card .name { font-size: 0.95rem; }
         }
     </style>
 </head>
@@ -569,8 +178,7 @@
 <div class="container">
     <div class="top-row">
         <a href="index.html" class="btn-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 12l-8-8v6H4v4h8v6z"/></svg>
-            Back to Main Countdown
+            <svg viewBox="0 0 24 24"><path d="M20 12l-8-8v6H4v4h8v6z"/></svg>Back to Main Countdown
         </a>
         <button class="theme-toggle" id="themeToggle">
             <svg id="themeIcon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/></svg>
@@ -578,79 +186,141 @@
         </button>
     </div>
     <header>
-        <h1>THE MYSTERY OF THE TWELVE <small>A Call to Reason – The Mahdi Database</small></h1>
+        <h1>THE MYSTERY OF<br>THE TWELVE <small>A Call to Reason</small></h1>
     </header>
+
     <section>
-        <h2>The Prophetic Decree: Twelve Caliphs from Quraysh</h2>
+        <h2>The Prophetic Decree:<br><small>Twelve Caliphs from Quraysh</small></h2>
         <div class="ayah-box">
             <p>“There will be twelve Caliphs (leaders, rulers, or Amirs) after me. Islam will remain triumphant, strong, victorious, and continuously established until the Day of Judgment. The religion will continue to be established, and this matter (Islam) will remain dominant until these twelve Caliphs have ruled over you. All of them will be from the tribe of Quraysh. Whoever obeys them obeys Allah, and whoever disobeys them disobeys Allah. After these twelve Caliphs, chaos (harj) will occur, and then the Horn will be blown.”</p>
             <div class="source">— Sahih Muslim 1821, 1822; Sahih Bukhari 7222, 7223; Sunan Abi Dawud 4279; Musnad Ahmad 3781 · <a href="https://sunnah.com/muslim/33/1" target="_blank">View</a></div>
         </div>
         <p>The authenticity is indisputable. The confusion lies only in the identity of the twelve.</p>
     </section>
+
     <section>
-        <h2>1400 Years of Failure: Sunni Scholars Cannot Agree</h2>
+        <h2>1400 Years of Failure:<br><small>Sunni Scholars Cannot Agree</small></h2>
         <p>Sunni scholars have struggled for fourteen centuries to produce a definitive list. Their proposals mix the Rashidun, Umayyads, and Abbasids. But this creates a severe logical and moral crisis: the lists often include the Umayyad dynasty — the very political machine that cursed Imam Ali from the pulpits and whose commander, Yazid, slaughtered Imam Hussain, the beloved grandson of the Prophet, at Karbala.</p>
         <p><strong>How can the “best of generations” and the divinely promised leadership include those who opposed and killed the Holy Household (Ahl al‑Bayt)?</strong></p>
     </section>
+
     <section>
-        <h2>The Question of Infallibility</h2>
+        <h2>The Question<br><small>of Infallibility</small></h2>
         <p>Some say the twelve caliphs do not need to be innocent. But the proof for this claim is very weak. Only a single authentic narration has been found that mentions the righteousness of the last one alone. By common sense, that last one is the Mahdi.</p>
         <p>This raises a simple yet devastating question: <strong>Why did the Prophet talk about twelve caliphs but give no names for the first eleven? Why did he only give details about the final one?</strong></p>
         <p>Even then, the name of this awaited final person is not clearly written down anywhere. Yet his connection remains to the household of the Prophet Muhammad (SAW) — the Ahlul‑Bayt. How is it logical that the eleven are outsiders, when the very last one belongs to the family?</p>
         <p>This strange silence about eleven of them, and a single hint about the last one, must make us stop and think.</p>
     </section>
+
     <section>
-        <h2>The Shia Alternative: A Perfectly Preserved Chain</h2>
+        <h2>The Shia Alternative:<br><small>A Perfectly Preserved Chain</small></h2>
         <p>In stark contrast, the Shia tradition presents a list of twelve that is perfectly preserved, unbroken, and drawn exclusively from the purified lineage of the Prophet: <strong>The Twelve Imams, from Imam Ali (A.S.) to the awaited Imam Mahdi (A.S.)</strong>.</p>
         <p>Even in Sunni eschatology, the final savior is called <strong>Imam</strong> Mahdi, not Caliph Mahdi. If the concept of divinely guided Imams is a “later fabrication,” why does this title persist so prominently for the promised one?</p>
     </section>
+
     <section>
-        <h2>The Explicit Prophetic Narrations</h2>
+        <h2>The Explicit<br><small>Prophetic Narrations</small></h2>
         <div class="ayah-box">
             <p>“If there were not remaining from the life of this world except a single day, Allah would certainly lengthen that day until He sends forth therein a man from me — or he said: from my household. He shall fill the earth with equity and justice just as it had been filled with oppression and tyranny. The world shall not pass away nor come to an end until a man from my household rules over the Arabs, and his name shall coincide with my name, and his father's name shall coincide with my father's name.”</p>
-            <div class="source">— Sunan Abi Dawud 4282, 4283; Jami‘ at‑Tirmidhi 2230, 2231; Musnad Ahmad 3573, 11129, 11313, 11150 · <a href="https://sunnah.com/abudawud/38/4" target="_blank">View</a></div>
+            <div class="source">— Sunan Abi Dawud 4282, 4283 <span class="hadith-inline"><a href="https://sunnah.com/abudawud/38/4" target="_blank">View</a></span>; Jami‘ at‑Tirmidhi 2230, 2231; Musnad Ahmad 3573, 11129, 11313, 11150</div>
         </div>
         <div class="ayah-box">
             <p>“He gathered Ali, Fatima, Hasan, and Husayn under a cloak and prayed: O Allah, these are the members of my family (Ahlul‑Bayt), so remove impurity from them and purify them thoroughly.”</p>
-            <div class="source">— Sahih Muslim 2424; Jami‘ at‑Tirmidhi 3205, 3871 · <a href="https://sunnah.com/muslim/44/91" target="_blank">View</a></div>
+            <div class="source">— Sahih Muslim 2424 <span class="hadith-inline"><a href="https://sunnah.com/muslim/44/91" target="_blank">View</a></span>; Jami‘ at‑Tirmidhi 3205, 3871</div>
         </div>
         <div class="ayah-box">
             <p>“The Mahdi is one of us, a member of my family/household (Ahl al‑Bayt), from the descendants of Fatimah. Allah will rectify/guide him in a single night.”</p>
-            <div class="source">— Sunan Abi Dawud 4284; Sunan Ibn Majah 4085, 4086; Mishkat al‑Masabih 5453; Musnad Ahmad 645 · <a href="https://sunnah.com/abudawud/38/6" target="_blank">View</a></div>
+            <div class="source">— Sunan Abi Dawud 4284 <span class="hadith-inline"><a href="https://sunnah.com/abudawud/38/6" target="_blank">View</a></span>; Sunan Ibn Majah 4085, 4086; Mishkat al‑Masabih 5453; Musnad Ahmad 645</div>
         </div>
         <div class="ayah-box">
             <p>“There would be a caliph in the last (period) of my Ummah who would freely give handfuls of wealth to the people without counting it.”</p>
-            <div class="source">— Sahih Muslim 2913, 2914; Riyad as‑Salihin 1824; Jami‘ at‑Tirmidhi 2232 · <a href="https://sunnah.com/muslim/54/72" target="_blank">View</a></div>
+            <div class="source">— Sahih Muslim 2913, 2914 <span class="hadith-inline"><a href="https://sunnah.com/muslim/54/72" target="_blank">View</a></span>; Riyad as‑Salihin 1824</div>
         </div>
         <div class="ayah-box">
             <p>“How will you be, and what will be your state, when the son of Maryam — ‘Isa (Jesus), peace be upon him — descends amongst you, and there is an Imam from among you?”</p>
-            <div class="source">— Sahih Bukhari 3449; Sahih Muslim 155, 156 · <a href="https://sunnah.com/bukhari/60/112" target="_blank">View</a></div>
+            <div class="source">— Sahih Bukhari 3449 <span class="hadith-inline"><a href="https://sunnah.com/bukhari/60/112" target="_blank">View</a></span>; Sahih Muslim 155, 156</div>
+        </div>
+        <div class="ayah-box">
+            <p>“The Mahdi will appear, and Jesus, the son of Mary, will descend. Jesus will pray behind the Mahdi.”</p>
+            <div class="source">— Jami‘ at‑Tirmidhi 2230 (Hasan); also in Musnad Ahmad</div>
         </div>
     </section>
+
     <section>
-        <h2>The Omission from the Sahih Books</h2>
-        <p>Islam came to us directly from the Prophet (peace be upon him). Yet today we see many people ignoring the Prophet's clear words and putting their own thinking first. They care more about supporting the government than supporting the religion.</p>
-        <p>There is also something deeply suspicious about the famous Hadith books called “Sahih.” The Mahdi is not mentioned at all in the most popular and trusted books that people read mostly today. Any talk about him is hidden in other books that hardly anyone knows about. This makes a person wonder about a deliberate erasure. But lies cannot cover up the truth forever. No matter how nicely a lie is presented, it will always have holes and weak spots. Those who look carefully will find those flaws.</p>
-        <p><strong>Are these people real scholars who protect the religion? Or are they liars dressed like scholars, trying to weaken Islam by attacking the truth?</strong></p>
-        <p>Of course, all governments and superpowers around the whole world are particularly great enemies of the Mahdi. Allah will not destroy the world as long as even one Muslim remains alive on earth. The Day of Judgment will only come after the last Muslim has passed away and Islam has been completely forgotten. This is why the world continues to exist today. Creation is safe from total destruction until the final promise is fulfilled and the awaited final Imam appears to fill the earth with justice. Only after that will the end of time truly arrive.</p>
+        <h2>The Omission<br><small>from the Sahih Books</small></h2>
+        <p>Islam came to us directly from the Prophet (peace be upon him). Yet today we see many people ignoring the Prophet's clear words and putting their own thinking first. They care more about supporting the government than supporting the religion, and this clearly helps corruption to spread.</p>
+        <p>There is also something very odd about the famous Hadith books called “Sahih” which means authentic. It is strange that the Mahdi is not mentioned at all in the most popular and trusted books that people read mostly today. Any talk about him is hidden in other books that hardly anyone knows about. This makes a person wonder about something fishy. They may have tried to erase it completely. But they could not do it. Lies cannot cover up the truth forever. No matter how nice a lie looks, it will always have holes and weak spots. People who look carefully will find those flaws.</p>
+        <p><strong>So the question we must ask is this: Are these people real scholars who protect the religion? Or are they just liars dressed up like scholars, trying to make Islam weak and confusing, using lies to attack the truth? Or are they trying to establish a new so‑called Islam that suits their own preferences?</strong></p>
+        <p>Of course, all governments and superpowers around the whole world are particularly great enemies for the Mahdi. Allah will not destroy the whole world as long as there is even one Muslim left alive on the earth. The Day of Judgment will only come after the last Muslim has passed away and the religion of Islam has been completely forgotten. This is why the world continues to exist today. Creation is safe from total destruction until the final promise is fulfilled and the awaited final Imam appears to fill the earth with justice. Only after that will the end of time truly arrive.</p>
     </section>
+
     <section>
-        <h2>Applying Pure Logic: The Only Possible List</h2>
+        <h2>Applying Pure Logic:<br><small>The Only Possible List</small></h2>
         <p>The narrations were compiled by the greatest scholars of the early centuries. They preserved the text. It is upon us now to apply pure logic to the interpretation. The evidence is in your own Sahih books. Verify it.</p>
         <ol class="proof-steps">
-            <li><span class="step-num">1</span> <strong>Absolute Obedience Requires Infallibility.</strong> The hadith says obeying them is obeying Allah, with no exception for sin. Therefore, all twelve must be <span class="highlight">ma‘sum</span> (infallible). Sunni Islam does not grant infallibility to any ruler after the Prophet. The only group in Islam with a consistent doctrine of infallible successors is the Twelve Imams of Ahl al‑Bayt.</li>
-            <li><span class="step-num">2</span> <strong>Moral Purity Cannot Be Compromised.</strong> Any list that includes tyrants like Yazid — who massacred the Prophet’s family and desecrated Medina — is automatically invalid. The Imams, by contrast, are the very people purified by Allah under the cloak.</li>
+            <li><span class="step-num">1</span> <strong>Absolute Obedience Requires Infallibility.</strong> The hadith says obeying them is obeying Allah, with no exception for sin. Therefore, all twelve must be <span class="highlight">ma‘sum</span> (infallible). Sunni Islam does not grant infallibility to any ruler after the Prophet. The only group in Islam with a consistent doctrine of infallible successors is the Twelve Imams of Ahl al‑Bayt. <span class="hadith-inline">Sahih Muslim 1821 <a href="https://sunnah.com/muslim/33/1" target="_blank">View</a></span></li>
+            <li><span class="step-num">2</span> <strong>Moral Purity Cannot Be Compromised.</strong> Any list that includes tyrants like Yazid — who massacred the Prophet’s family and desecrated Medina — is automatically invalid. The Imams, by contrast, are the very people purified by Allah under the cloak. <span class="hadith-inline">Sahih Muslim 2424 <a href="https://sunnah.com/muslim/44/91" target="_blank">View</a></span></li>
             <li><span class="step-num">3</span> <strong>Continuous Establishment of Islam.</strong> The Arabic “qā’iman” means Islam remains standing during their era. The Imams preserved the true teachings of Islam through knowledge, even under oppression. No political dynasty did this.</li>
             <li><span class="step-num">4</span> <strong>Unbroken Sequential Chain.</strong> The twelve must rule in succession. The Shia Imams form a father‑to‑son chain from 11 AH to 260 AH. Immediately after the twelfth Imam’s occultation, the Muslim world fell into the harj (chaos) that has never been repaired.</li>
             <li><span class="step-num">5</span> <strong>The Title “Imam” Is Consistent.</strong> Even Sunni sources call the final saviour “Imam Mahdi.” If the last is an Imam, the other eleven logically share the same nature. A mixed list of fallible caliphs and one infallible Imam is a categorical mismatch.</li>
-            <li><span class="step-num">6</span> <strong>The Father’s Name Clarification.</strong> A variant says the Mahdi’s father’s name is the same as the Prophet’s father (Abdullah). The Shia twelfth Imam’s immediate father is Hasan al‑Askari, but “ism” in Arabic also means attribute. Hasan al‑Askari was the perfect servant of Allah in essence, and his forefather is Abdullah. The prophecy is fulfilled.</li>
+            <li><span class="step-num">6</span> <strong>The Father’s Name Clarification.</strong> A variant says the Mahdi’s father’s name is the same as the Prophet’s father (Abdullah). The Shia twelfth Imam’s immediate father is Hasan al‑Askari, but “ism” in Arabic also means attribute. Hasan al‑Askari was the perfect servant of Allah in essence, and his forefather is Abdullah. The prophecy is fulfilled. <span class="hadith-inline">Jami‘ at‑Tirmidhi 2231 <a href="https://sunnah.com/tirmidhi/33/74" target="_blank">View</a></span></li>
             <li><span class="step-num">7</span> <strong>Quranic Pattern of Twelve.</strong> The Quran repeatedly uses the number twelve for divinely chosen guides: twelve tribes, twelve springs, twelve apostles of Jesus. Islam completes this pattern with twelve successors from the Prophet’s family.</li>
             <li><span class="step-num">8</span> <strong>Political Suppression of the Names.</strong> The complete absence of the Mahdi and the names of the twelve in the most popular Sahih books, while they are abundant in other canonical collections, is clear evidence of Abbasid‑era censorship. The truth survived because it could not be fully erased.</li>
+            <li><span class="step-num">9</span> <strong>Prophetic Statement on the Imamate.</strong> The Prophet (ﷺ) said: “Ali is the master of whoever I am master of.” <span class="hadith-inline">Musnad Ahmad 950 (Sahih) <a href="https://sunnah.com/ahmad/950" target="_blank">View</a></span></li>
+            <li><span class="step-num">10</span> <strong>Quranic Verse of Purification.</strong> “Allah only desires to remove impurity from you, O Ahl al‑Bayt, and purify you thoroughly.” (33:33). The twelve Imams are the Ahl al‑Bayt, chosen for infallibility.</li>
         </ol>
     </section>
+
     <section>
-        <h2>Sunni Confirmation of the Twelve Imams</h2>
+        <h2>The Logical Sieve<br><small>– A Detailed Breakdown</small></h2>
+        <p>For anyone who takes the Prophet's words seriously, this narration about twelve leaders is a logical puzzle that refuses to be solved by the conventional lists. The following breakdown shows why only one set of names fits all the conditions without contradiction.</p>
+
+        <h3>1. The Fixed Conditions of the Hadith</h3>
+        <p>The hadith establishes these non‑negotiable facts:</p>
+        <ul class="clean-list">
+            <li><span class="marker">●</span> There will be exactly twelve leaders after the Prophet, all from Quraysh.</li>
+            <li><span class="marker">●</span> While they are in charge, Islam will remain standing, strong, and victorious (qā’iman).</li>
+            <li><span class="marker">●</span> Obeying them is the same as obeying Allah; disobeying them is the same as disobeying Allah.</li>
+            <li><span class="marker">●</span> After the twelve, a period of intense chaos (harj) breaks out, followed by the Last Day.</li>
+            <li><span class="marker">●</span> Separately, the final member is identified as the Mahdi: from the Prophet’s household, through Fatimah, named Muhammad.</li>
+            <li><span class="marker">●</span> When Jesus descends, this man is called the Imam from among the Muslims.</li>
+            <li><span class="marker">●</span> Some narrations add that his father’s name matches the Prophet’s father’s name (Abdullah).</li>
+        </ul>
+        <p>Any proposed list of twelve must satisfy every one of these conditions. If even one fails, the list is invalid.</p>
+
+        <h3>2. The Obedience Clause Demands Infallibility</h3>
+        <p>The statement that obeying the twelve is obeying Allah, without exception for sin, forces the conclusion that all twelve must be infallible. If a leader can command something sinful, obedience would be disobedience to Allah, making the statement false. Sunni Islam does not claim infallibility for any ruler after the Prophet, and history shows many caliphs committed major injustices. Yazid, who killed the Prophet’s grandson, cannot be placed in a slot where obeying him equals obeying God. The moral contradiction is immediate and fatal. This single step eliminates almost every historical caliph.</p>
+
+        <h3>3. Narrowing the Field to the Ahl al‑Bayt</h3>
+        <p>Once infallibility is required, the candidates narrow drastically. The only group in early Islamic history believed by a significant body of Muslims to be infallible are the Imams of the Prophet’s household — the Ahl al‑Bayt. They are exactly twelve, from Ali ibn Abi Talib to Muhammad al‑Mahdi. No political dynasty produced twelve consecutive morally pure and divinely guided rulers. The Umayyads and Abbasids fell far short, and even the four rightly guided caliphs are not considered infallible by Sunnis, with three of them not from the Prophet’s immediate household. The obedience clause alone points directly toward the Shia list.</p>
+
+        <h3>4. “Islam Will Remain Triumphant”<br>(Qā’iman)</h3>
+        <p>The Arabic word <em>qā’iman</em> means standing, established, enduring. If interpreted as political dominance, this fails under many caliphs — the Umayyads massacred the Prophet’s family and sacked Medina; the Abbasids endured civil wars and fragmentation. But if the triumph means the preservation of authentic teachings, a different picture emerges. The Imams of the Ahl al‑Bayt, though politically marginalized and persecuted, were the custodians of the religion. Their knowledge kept the Quran and Sunnah alive, and Islam as a spiritual reality remained established through them even when tyrants sat on the throne. This interpretation fits the word perfectly.</p>
+
+        <h3>5. A Sequential, Unbroken Chain</h3>
+        <p>The hadith requires a sequential chain, not a scattered collection of righteous figures from different centuries. A list mixing four Rashidun, Umar ibn Abd al‑Aziz, and the Mahdi leaves centuries of non‑righteous rulers in between, making the number twelve arbitrary. The Shia Imams, however, follow one another in an unbroken father‑to‑son line from 11 AH to 260 AH. Immediately after the twelfth Imam’s occultation, the Muslim world fell into fragmentation and chaos that has never been repaired. The <em>harj</em> predicted fits exactly with the onset of the occultation period, now lasting over a thousand years without a universally recognized infallible guide. No other list matches this timeline.</p>
+
+        <h3>6. The Title “Imam” Is Consistent</h3>
+        <p>When Jesus descends, the Mahdi is called the <em>Imam</em> from among the Muslims, not the Caliph. An Imam carries divinely sanctioned spiritual authority. If the final member is an Imam in this full sense, the other eleven logically share the same nature. A chain of eleven fallible political rulers and one sinless Imam is a categorical mismatch. The Shia view — that all twelve are Imams and the twelfth is the Mahdi — maintains a consistent identity across the entire group.</p>
+
+        <h3>7. The Father’s Name Clarification</h3>
+        <p>A variant narration says the Mahdi’s father’s name coincides with the Prophet’s father’s name (Abdullah). The Shia twelfth Imam’s father is Hasan al‑Askari. On the surface, this looks like a contradiction. However, the Arabic word <em>ism</em> can mean an attribute or description, not just a personal name. Abdullah means “servant of Allah,” and Hasan al‑Askari was renowned for his piety and devotion — his attribute was that of a perfect servant of Allah. Moreover, the Mahdi’s lineage traces back to the Prophet through Fatimah, so his forefather is Abdullah. The core prophecy — his name is Muhammad — is universal. The father’s name variant appears in only one chain and does not overturn the overwhelming converging evidence.</p>
+
+        <h3>8. Why No Open Naming of All Twelve?</h3>
+        <p>The Prophet’s silence on the names of the first eleven, while detailing only the Mahdi, is logical. Openly naming them would have put them in mortal danger from the Umayyad and Abbasid dynasties, who hunted down and killed the Prophet’s family. The Prophet gave enough attributes to recognize them while keeping the names safe within the family and close companions. The widespread absence of the Mahdi and the names of the twelve in the most popular Sahih books, while they appear in other canonical collections, is itself evidence of Abbasid‑era censorship. The Abbasid court suppressed narrations that could legitimize the Alid Imams. The Shia books, compiled outside state control, preserved the detailed list while the official books omitted it.</p>
+
+        <h3>9. The Critical Condition:<br>Descendants of Fatimah</h3>
+        <p>The Mahdi is explicitly described as being <strong>from the descendants of Fatimah</strong>. This condition is non‑negotiable. Any list that places the Mahdi outside the bloodline of the Prophet through his daughter Fatimah is automatically invalid. The Shia list uniquely satisfies this: Imam Ali (A.S.) is the husband of Fatimah and father of the line, and the subsequent eleven Imams are all direct descendants of Fatimah. Sunni mixed lists often place the Mahdi at the end of a chain of Qurayshi rulers who have no direct lineage to Fatimah, breaking the prophetic condition. The logical consequence is that if the final member must be from Fatimah’s line, then the entire chain of twelve is inherently tied to the Ahl al‑Bayt, because no list of righteous caliphs can end with a pure descendant of Fatimah unless all twelve belong to that sacred household.</p>
+
+        <h3>10. The Quranic Pattern of Twelve</h3>
+        <p>Throughout scripture, the number twelve repeatedly marks divine guidance: the twelve tribes of Israel, the twelve springs of Moses, the twelve apostles of Jesus. Islam, as the final and complete message, naturally completes this pattern with twelve successors from the Prophet’s own family. This typological symmetry adds deep resonance to the logical conclusion.</p>
+
+        <h3>11. The Only List That Survives</h3>
+        <p>Putting it all together, the logical sieve leaves only one set of names standing: Ali, Hasan, Husayn, Ali Zayn al‑Abidin, Muhammad al‑Baqir, Ja’far al‑Sadiq, Musa al‑Kadhim, Ali al‑Ridha, Muhammad al‑Jawad, Ali al‑Hadi, Hasan al‑Askari, and Muhammad al‑Mahdi. Every alternative list collapses — mixed Sunni lists fail the morality, continuity, obedience, and lineage tests; scattered righteous caliphs fail the number and sequence tests; symbolic interpretations fail because the hadith speaks of real rulers whose obedience is divinely binding. Only the Twelve Imams of the Ahl al‑Bayt survive every logical requirement intact. This is not sectarian bias; it is what the intellect is forced to accept if it respects the words of the Prophet and follows the thread of reason without flinching.</p>
+    </section>
+
+    <section>
+        <h2>Sunni Confirmation<br><small>of the Twelve Imams</small></h2>
         <p>The names of the Twelve Imams are not a Shia invention. They are recorded by prominent Sunni scholars in their own works:</p>
         <div class="table-wrap">
             <table>
@@ -660,13 +330,17 @@
                     <tr><td><strong>Ibrahim al‑Juwayni</strong> (14th c.)</td><td><em>Fara‘id al‑Simtayn</em></td><td>Contains narrations naming the twelve successors as the Imams from the Prophet's progeny</td></tr>
                     <tr><td><strong>Ibn Hajar al‑Asqalani</strong></td><td><em>Al‑Sawa‘iq al‑Muharriqa</em></td><td>Confirms the Mahdi is from the Ahl al‑Bayt and that the twelfth Imam is Muhammad al‑Mahdi</td></tr>
                     <tr><td><strong>Jalal al‑Din al‑Suyuti</strong></td><td>Multiple works</td><td>Acknowledges the 12‑caliph hadith and the Mahdi's role</td></tr>
+                    <tr><td><strong>Al‑Hakim al‑Nisaburi</strong></td><td><em>Mustadrak al‑Hakim</em></td><td>Records narrations that the twelve caliphs are from the Banu Hashim, linking to the Imams</td></tr>
+                    <tr><td><strong>Al‑Khatib al‑Baghdadi</strong></td><td><em>Tarikh Baghdad</em></td><td>Cites hadith about the Mahdi and the twelve</td></tr>
+                    <tr><td><strong>Al‑Khwarazmi</strong></td><td><em>Al‑Manaqib</em></td><td>Narrates the famous hadith of the twelve Imams and names them</td></tr>
                 </tbody>
             </table>
         </div>
         <p>The <strong>content</strong> is the same. The Shia did not invent the list—they <strong>preserved</strong> it while others <strong>suppressed</strong> it.</p>
     </section>
+
     <section>
-        <h2>Historical Suppression: The Abbasid Persecution</h2>
+        <h2>Historical Suppression:<br><small>The Abbasid Persecution</small></h2>
         <p>The Abbasid caliphate, which ruled from 750 to 1258 CE, was built on the overthrow of the Umayyads. But the Abbasids were also <strong>enemies</strong> of the Ahl al‑Bayt. They imprisoned, poisoned, and killed multiple Imams. They had every reason to <strong>erase</strong> the names of the Twelve from public memory.</p>
         <ul class="clean-list">
             <li><span class="marker">●</span> Imam Musa al‑Kadhim (7th Imam) was <strong>poisoned</strong> in Abbasid prison</li>
@@ -677,8 +351,9 @@
         </ul>
         <p>The Abbasids systematically <strong>eliminated</strong> the Imams of the Ahl al‑Bayt. They also controlled the <strong>compilation</strong> of hadith. Is it any surprise that the names of the Twelve do not appear in the “official” collections? The truth survived <strong>despite</strong> the suppression, not because of it.</p>
     </section>
+
     <section>
-        <h2>Quranic Confirmation of the Imamate</h2>
+        <h2>The Quranic<br><small>Confirmation of the Imamate</small></h2>
         <div class="ayah-box">
             <div class="arabic" dir="rtl">إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا</div>
             <div class="translation"><strong>“Allah only desires to remove impurity from you, O Ahl al‑Bayt, and purify you thoroughly.”</strong></div>
@@ -699,10 +374,16 @@
             <div class="translation"><strong>“And [remember] when Ibrahim was tried by his Lord with words and he fulfilled them. He said: 'I am making you a leader (Imam) for the people.'”</strong></div>
             <div class="source">— Surah Al‑Baqarah (2:124) · <a href="https://quran.com/2/124" target="_blank">Read</a></div>
         </div>
+        <div class="ayah-box">
+            <div class="arabic" dir="rtl">وَجَعَلْنَاهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا</div>
+            <div class="translation"><strong>“And We made them Imams guiding by Our command.”</strong></div>
+            <div class="source">— Surah Al‑Anbiya (21:73) · <a href="https://quran.com/21/73" target="_blank">Read</a></div>
+        </div>
         <p>The concept of divinely appointed, infallible leaders (Imams) is <strong>rooted in the Quran itself</strong>. The only question is: who are they? The answer is the Ahl al‑Bayt, purified by Allah Himself.</p>
     </section>
+
     <section>
-        <h2>The Quranic Pattern of Twelve</h2>
+        <h2>The Quranic<br><small>Pattern of Twelve</small></h2>
         <div class="table-wrap">
             <table>
                 <thead><tr><th>Instance</th><th>Reference</th><th>Significance</th></tr></thead>
@@ -717,42 +398,22 @@
         </div>
         <p>The Quran consistently uses the number <strong>twelve</strong> for divinely chosen leadership and systems. The Prophet (ﷺ) completes this pattern by establishing <strong>twelve successors</strong> from his family. The pattern is too consistent to be coincidence.</p>
     </section>
+
     <section>
-        <h2>Validation: Only One List Survives Every Test</h2>
+        <h2>Validation:<br><small>Only List Survives Every Test</small></h2>
         <div class="table-wrap">
             <table>
-                <thead>
-                    <tr><th>Proposed List</th><th>All Infallible?</th><th>Morally Pure?</th><th>Continuous?</th><th>Last is Imam Mahdi?</th><th>Verdict</th></tr>
-                </thead>
+                <thead><tr><th>Proposed List</th><th>All Infallible?</th><th>Morally Pure?</th><th>Continuous?</th><th>Last is Imam Mahdi?</th><th>Mahdi from Fatimah?</th><th>Verdict</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td>Sunni mixed (Rashidun + Umayyads + Abbasids)</td>
-                        <td class="cross">No</td>
-                        <td class="cross">Includes Yazid & oppressors</td>
-                        <td class="cross">Centuries of gaps</td>
-                        <td class="check">Yes</td>
-                        <td class="cross">Fails</td>
-                    </tr>
-                    <tr>
-                        <td>Only righteous caliphs (scattered)</td>
-                        <td class="cross">No</td>
-                        <td class="check">Mostly</td>
-                        <td class="cross">No continuous chain</td>
-                        <td class="check">Yes</td>
-                        <td class="cross">Fails</td>
-                    </tr>
-                    <tr style="background:var(--bg-ayah);">
-                        <td><strong>Twelve Imams of Ahl al‑Bayt</strong></td>
-                        <td class="check">Yes</td>
-                        <td class="check">Perfectly pure</td>
-                        <td class="check">Father‑to‑son unbroken</td>
-                        <td class="check">Yes (al‑Mahdi)</td>
-                        <td class="check"><strong>ONLY VALID LIST</strong></td>
-                    </tr>
+                    <tr><td>Sunni mixed (Rashidun + Umayyads + Abbasids)</td><td class="cross">No</td><td class="cross">Includes Yazid & oppressors</td><td class="cross">Centuries of gaps</td><td class="check">Yes</td><td class="cross">Not necessarily</td><td class="cross">Fails</td></tr>
+                    <tr><td>Only righteous caliphs (scattered)</td><td class="cross">No</td><td class="check">Mostly</td><td class="cross">No continuous chain</td><td class="check">Yes</td><td class="cross">Not guaranteed</td><td class="cross">Fails</td></tr>
+                    <tr style="background:var(--bg-ayah);"><td><strong>Twelve Imams of Ahl al‑Bayt</strong></td><td class="check">Yes</td><td class="check">Perfectly pure</td><td class="check">Father‑to‑son unbroken</td><td class="check">Yes (al‑Mahdi)</td><td class="check">Yes (from Fatimah)</td><td class="check"><strong>ONLY VALID LIST</strong></td></tr>
                 </tbody>
             </table>
         </div>
+        <p>The additional requirement that the Mahdi be from the descendants of Fatimah is uniquely fulfilled by the Shia list, where all members after Imam Ali are direct descendants of Fatimah. No other list can make this claim without contradiction.</p>
     </section>
+
     <section>
         <h2>The Twelve Imams (A.S.)</h2>
         <div class="imam-card-list">
@@ -770,8 +431,9 @@
             <div class="imam-card" style="border:2px solid var(--gold);"><div class="name">12. Muhammad</div><div class="title">al‑Mahdi (Awaited)</div></div>
         </div>
     </section>
+
     <section>
-        <h2>Prophetic Treatise of Shah Nimatullah Wali (1330‑1431 AD)</h2>
+        <h2>Prophetic Treatise of<br><small>Shah Nimatullah Wali (1330‑1431 AD)</small></h2>
         <p><em>Ancient Persian Qaseedas predicting the wars leading to the Mahdi’s emergence at Hajj.</em></p>
         <div class="ayah-box"><div class="arabic" dir="rtl">ملکِ پنجاب و ہند و شورِ نگر، شور برپا شود بہ بحر و بر</div><div class="source"><strong>Translation:</strong> “Across Punjab, Hindustan, and the city of uproar, chaos ignites on land and sea.”</div></div>
         <div class="ayah-box"><div class="arabic" dir="rtl">مردِ غربی برآید از اقصٰی، مفسدان را کند ہمہ رسوا</div><div class="source"><strong>Translation:</strong> “A man from the West emerges from the far borders and disgraces the corrupt.”</div></div>
@@ -781,14 +443,25 @@
         <div class="ayah-box"><div class="arabic" dir="rtl">چون گزیند مهدئ صاحب زمان، بیعت از مکہ برآید ناگہان</div><div class="source"><strong>Translation:</strong> “When the Mahdi, Master of the Age, is chosen, a sudden pledge of allegiance rises from Mecca.”</div></div>
         <div class="ayah-box"><div class="arabic" dir="rtl">قایم آلِ محمد آشکارا مے بینم، صانعِ غیب و عیان را مے بینم</div><div class="source"><strong>Translation:</strong> “I clearly see the Riser from the family of Muhammad; I see the Maker of the unseen and the seen.”</div></div>
     </section>
+
     <section>
-        <h2>Comprehensive Hadith Reference Table</h2>
+        <h2>Lineage Insight:<br><small>Musa, Harun & Hasan, Husayn</small></h2>
+        <p>While Prophet Harun (AS) was the elder brother, Prophet Musa (AS) was the main messenger and the first of the two to receive prophethood.</p>
+        <p>The Request: Harun (AS) was made a prophet afterward, only because Musa (AS) prayed to Allah to appoint his brother as a helper to assist with his speech impediment.</p>
+        <p>In Islamic tradition, the next generation of prophets among the Children of Israel (Bani Isra'il) came primarily through the lineage of Prophet Harun (AS) (Aaron), rather than Prophet Musa (AS).</p>
+        <p>Imam Hassan’s (AS) daughter, Fatima (also known as Umm Abdillah), married Imam Husain’s (AS) son, Imam Ali Zain al-Abidin.</p>
+        <p>Imam Hasan al-Askari comes directly from the paternal lineage of the younger brother, Imam Husain (A.s.).</p>
+        <p>Imam Husain (AS) (the younger brother) was brutally slaughtered in the Tragedy of Karbala.</p>
+        <p>In ancient Middle Eastern cultures, the eldest brother always held the birthright. The oldest brother was supposed to be the leader, the chief of the family, and the main authority figure. Because Prophet Musa (AS) was the main leader chosen by God, many people naturally assume today that he must have been the older brother to fit that ancient rule.</p>
+        <p>The narrations were compiled by the greatest scholars of the early centuries. They preserved the text. It is upon us now to apply pure logic. The evidence is in your own Sahih books. Verify it. The truth is clear.</p>
+    </section>
+
+    <section>
+        <h2>Comprehensive<br><small>Hadith Reference Table</small></h2>
         <input type="text" id="searchInput" placeholder="Search by text, source, or narrator...">
         <div class="table-wrap">
             <table id="hadithTable">
-                <thead>
-                    <tr><th>#</th><th>Hadith Summary</th><th>Source</th><th>Number</th><th>Grade</th><th>Narrators</th><th>Link</th></tr>
-                </thead>
+                <thead><tr><th>#</th><th>Hadith Summary</th><th>Source</th><th>Number</th><th>Grade</th><th>Narrators</th><th>Link</th></tr></thead>
                 <tbody>
                     <tr><td>1</td><td>Twelve Caliphs from Quraysh; Islam remains established.</td><td>Sahih Muslim</td><td>1821</td><td class="sahih">Sahih</td><td>Jabir b. Samura</td><td><a href="https://sunnah.com/muslim/33/1" class="ref-link" target="_blank">View</a></td></tr>
                     <tr><td>2</td><td>Twelve Caliphs until the Hour.</td><td>Sahih Bukhari</td><td>7222</td><td class="sahih">Sahih</td><td>Jabir b. Samura</td><td><a href="https://sunnah.com/bukhari/94/48" class="ref-link" target="_blank">View</a></td></tr>
@@ -806,12 +479,14 @@
                     <tr><td>14</td><td>Mahdi given bay'ah at Hajj.</td><td>Mishkat al‑Masabih</td><td>5453</td><td class="hasan">Hasan</td><td>Multiple</td><td><a href="https://sunnah.com/mishkat/5453" class="ref-link" target="_blank">View</a></td></tr>
                     <tr><td>15</td><td>“There will be twelve Caliphs, all from Quraysh.”</td><td>Sunan Abi Dawud</td><td>4279</td><td>Sahih</td><td>Jabir b. Samura</td><td><a href="https://sunnah.com/abudawud/38/3" class="ref-link" target="_blank">View</a></td></tr>
                     <tr><td>16</td><td>“This religion will remain established until twelve Caliphs.”</td><td>Sahih Muslim</td><td>1822</td><td>Sahih</td><td>Jabir b. Samura</td><td><a href="https://sunnah.com/muslim/33/2" class="ref-link" target="_blank">View</a></td></tr>
+                    <tr><td>17</td><td>“Ali is the master of whoever I am master of.”</td><td>Musnad Ahmad</td><td>950</td><td>Sahih</td><td>Al‑Bara' ibn Azib</td><td><a href="https://sunnah.com/ahmad/950" class="ref-link" target="_blank">View</a></td></tr>
                 </tbody>
             </table>
         </div>
     </section>
+
     <section>
-        <h2>Frequently Asked Questions</h2>
+        <h2>Frequently<br><small>Asked Questions</small></h2>
         <div class="faq-item">
             <h3>“Why does the Mahdi’s name not appear in Bukhari or Muslim?”</h3>
             <div class="faq-answer">Because the Abbasids, who controlled the compilation of hadith, were enemies of the Ahl al‑Bayt. They suppressed what they could not destroy. The Mahdi appears in many other canonical collections, proving the suppression was not total.</div>
@@ -829,18 +504,16 @@
             <div class="faq-answer">Most reject it for <strong>political</strong> reasons, not scholarly ones. To accept the Shia list would invalidate the legitimacy of the Umayyad and Abbasid caliphates. The rejection is motivated by power, not evidence.</div>
         </div>
     </section>
-    <section>
-        <h2>Lineage Insight: Musa, Harun & Hasan, Husayn</h2>
-        <p>Prophet Harun (AS) was the elder brother, yet Musa (AS) was the primary messenger. Harun was appointed a prophet only after Musa’s prayer. The subsequent Israelite prophets came through Harun’s lineage. Similarly, in Islam, Imam Hasan (AS) was the elder, but the Imamate continued through Husayn (AS). Imam Hasan’s daughter Fatima married Imam Husayn’s son, Imam Zayn al‑Abidin, and the 11th Imam, Hasan al‑Askari, descends from Husayn. Divine selection does not follow human custom; it flows where Allah wills.</p>
-        <p>The narrations were compiled by the greatest scholars of the early centuries. They preserved the text. It is upon us now to apply pure logic. The evidence is in your own Sahih books. Verify it. The truth is clear.</p>
-    </section>
+
     <div class="footer-note">
         <p>All hadith references are directly linked to sunnah.com for independent verification.<br>The logical framework is built on the Quran, the Sunnah, and historical fact—not on sectarian bias.</p>
         <p style="margin-top:1rem;"><a href="index.html" class="btn-icon" style="display:inline-flex;">Back to Main Countdown</a></p>
     </div>
 </div>
 <button class="back-to-top" id="backToTop">
-    <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h16z"/><path d="M12 4v16"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4 L4 12 L10 12 L10 20 L14 20 L14 12 L20 12 Z" />
+    </svg>
 </button>
 <script>
     (function(){
@@ -848,10 +521,7 @@
         const themeIcon = document.getElementById('themeIcon');
         const themeLabel = document.getElementById('themeLabel');
         const html = document.documentElement;
-
-        function getSystemPref() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
+        function getSystemPref() { return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
         function applyTheme(theme) {
             if (theme === 'dark') {
                 html.setAttribute('data-theme', 'dark');
@@ -879,9 +549,7 @@
         initTheme();
 
         document.querySelectorAll('.faq-item h3').forEach(function(header) {
-            header.addEventListener('click', function() {
-                this.parentElement.classList.toggle('open');
-            });
+            header.addEventListener('click', function() { this.parentElement.classList.toggle('open'); });
         });
 
         const backBtn = document.getElementById('backToTop');
@@ -889,9 +557,7 @@
             if (window.scrollY > 400) backBtn.classList.add('visible');
             else backBtn.classList.remove('visible');
         });
-        backBtn.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        backBtn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
         document.getElementById('searchInput').addEventListener('keyup', function() {
             const filter = this.value.toLowerCase();
