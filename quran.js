@@ -47,6 +47,14 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Ma'idah (5:67)`,
     highlight: []
   },
+  "6:158": {
+    surah: 6,
+    verse: 158,
+    arabic: `يَوْمَ يَأْتِي بَعْضُ آيَاتِ رَبِّكَ لَا يَنفَعُ نَفْسًا إِيمَانُهَا لَمْ تَكُنْ آمَنَتْ مِن قَبْلُ أَوْ كَسَبَتْ فِي إِيمَانِهَا خَيْرًا`,
+    translation: `<strong>"On the day when some of the signs of your Lord come, <span class="highlight">no soul will benefit</span> from its faith unless <span class="highlight">it had believed before</span> or had earned good through its faith."</strong>`,
+    reference: `Surah Al-An'am (6:158)`,
+    highlight: []
+  },
   "7:187": {
     surah: 7,
     verse: 187,
@@ -119,6 +127,14 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Hajj (22:47)`,
     highlight: [`day`, `thousand years`, `you count`]
   },
+  "27:82": {
+    surah: 27,
+    verse: 82,
+    arabic: `وَإِذَا وَقَعَ الْقَوْلُ عَلَيْهِمْ أَخْرَجْنَا لَهُمْ دَابَّةً مِّنَ الْأَرْضِ تُكَلِّمُهُمْ أَنَّ النَّاسَ كَانُوا بِآيَاتِنَا لَا يُوقِنُونَ`,
+    translation: `<strong>"And when the Word is fulfilled against them, We shall bring out from <span class="highlight">the earth a Beast</span> for them, which will speak to them because <span class="highlight">mankind believed not with certainty in Our signs</span>."</strong>`,
+    reference: `Surah An-Naml (27:82)`,
+    highlight: [`the earth a Beast`,`mankind believed not with certainty in Our signs`]
+  },
   "32:5": {
     surah: 32,
     verse: 5,
@@ -158,6 +174,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"The <span class="highlight">Hour has drawn near</span>, and the moon has split."</strong>`,
     reference: `Surah Al‑Qamar (54:1)`,
     highlight: [`Hour has drawn near`]
+  },
+  "55:37": {
+    surah: 55,
+    verse: 37,
+    arabic: `فَإِذَا انشَقَّتِ السَّمَاءُ فَكَانَتْ وَرْدَةً كَالدِّهَانِ`,
+    translation: `<strong>"And when <span class="highlight">the sky</span> is split open and becomes <span class="highlight">rose-red</span> like molten oil."</strong>`,
+    reference: `Surah Ar-Rahman (55:37)`,
+    highlight: [`rose-red`,`the sky`]
   },
   "69:17": {
     surah: 69,
