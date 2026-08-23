@@ -3,7 +3,7 @@ window.QURAN_VERSES = {
     surah: 2,
     verse: 36,
     arabic: `فَأَزَلَّهُمَا الشَّيْطَانُ عَنْهَا فَأَخْرَجَهُمَا مِمَّا كَانَا فِيهِ ۖ وَقُلْنَا اهْبِطُوا بَعْضُكُمْ لِبَعْضٍ عَدُوٌّ ۖ وَلَكُمْ فِي الْأَرْضِ مُسْتَقَرٌّ وَمَتَاعٌ إِلَىٰ حِينٍ`,
-    translation: `And Satan caused them to slip out of it and brought them out of that they were in. And We said: 'Go down, some of you as enemies to others, and for you on the earth is a dwelling place and provision for a time.'`,
+    translation: `And Satan caused them to slip out of it and brought them out of that they were in. And We said: '<strong>Go down, some of you as enemies to others, and for you on the earth is a dwelling place and provision for a time.</strong>'`,
     reference: `Surah Al‑Baqarah (2:36)`,
     highlight: []
   },
@@ -11,15 +11,15 @@ window.QURAN_VERSES = {
     surah: 2,
     verse: 124,
     arabic: `وَإِذِ ابْتَلَىٰ إِبْرَاهِيمَ رَبُّهُ بِكَلِمَاتٍ فَأَتَمَّهُنَّ ۖ قَالَ إِنِّي جَاعِلُكَ لِلنَّاسِ إِمَامًا`,
-    translation: `<strong>"And when Ibrahim was tried by his Lord with words and he fulfilled them, He said: 'I am making you an Imam for mankind.'"</strong> Imamate is a divine covenant, higher than prophethood, granted after trials.`,
+    translation: `<strong>"And when Ibrahim was tried by his Lord with words and he fulfilled them, He said: 'I am making you an <span class="highlight">Imam</span> for mankind.'"</strong> Imamate is a divine covenant, higher than prophethood, granted after trials.`,
     reference: `Surah Al‑Baqarah (2:124)`,
-    highlight: []
+    highlight: [`Imam`]
   },
   "3:61": {
     surah: 3,
     verse: 61,
     arabic: `فَمَنْ حَاجَّكَ فِيهِ مِن بَعْدِ مَا جَاءَكَ مِنَ الْعِلْمِ فَقُلْ تَعَالَوْا نَدْعُ أَبْنَاءَنَا وَأَبْنَاءَكُمْ وَنِسَاءَنَا وَنِسَاءَكُمْ وَأَنفُسَنَا وَأَنفُسَكُمْ ثُمَّ نَبْتَهِلْ فَنَجْعَل لَّعْنَتَ اللَّهِ عَلَى الْكَاذِبِينَ`,
-    translation: `<strong>"If anyone disputes this with you after knowledge has come, say: Come, let us call our sons and your sons, our women and your women, ourselves and yourselves, then pray and invoke Allah's curse upon the liars."</strong> The Prophet brought only Ali, Fatima, Hasan, and Husayn, identifying Ali as anfusana (our selves).`,
+    translation: `<strong>"If anyone disputes this with you after knowledge has come, say: Come, let us call <span class="highlight">our sons</span> and your sons, our women and your women, <span class="highlight">ourselves</span> and yourselves, then pray and invoke Allah's curse upon the liars."</strong> The Prophet brought only Ali, Fatima, Hasan, and Husayn, identifying Ali as anfusana (our selves).`,
     reference: `Surah Al‑Imran (3:61)`,
     highlight: []
   },
@@ -27,17 +27,17 @@ window.QURAN_VERSES = {
     surah: 4,
     verse: 59,
     arabic: `يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ`,
-    translation: `<strong>"O you who have believed, obey Allah and obey the Messenger and those in authority among you (Ulil Amr)."</strong>`,
+    translation: `<strong>"O you who have believed, obey Allah and obey the Messenger and <span class="highlight">those in authority</span> among you (<span class="highlight">Ulil Amr</span>)."</strong>`,
     reference: `Surah An‑Nisa (4:59)`,
-    highlight: []
+    highlight: [`those in authority`,`Ulil Amr`]
   },
   "5:55": {
     surah: 5,
     verse: 55,
     arabic: `إِنَّمَا وَلِيُّكُمُ اللَّهُ وَرَسُولُهُ وَالَّذِينَ آمَنُوا الَّذِينَ يُقِيمُونَ الصَّلَاةَ وَيُؤْتُونَ الزَّكَاةَ وَهُمْ رَاكِعُونَ`,
-    translation: `<strong>"Your guardian (Wali) is none but Allah, His Messenger, and those who have believed — who establish prayer and give zakah while bowing (in prayer)."</strong> This verse was revealed when Imam Ali gave his ring as charity while in ruku' (bowing).`,
+    translation: `<strong>"Your guardian (Wali) is none but Allah, His Messenger, and <span class="highlight">those who</span> have believed — who establish prayer and give <span class="highlight">zakah while bowing</span> (in prayer)."</strong> This verse was revealed when Imam Ali gave his ring as charity while in ruku' (bowing).`,
     reference: `Surah Al‑Ma'idah (5:55)`,
-    highlight: []
+    highlight: [`those who`,`zakah while bowing`]
   },
   "5:67": {
     surah: 5,
