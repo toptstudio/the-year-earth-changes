@@ -71,6 +71,14 @@ window.QURAN_VERSES = {
     reference: `Surah Yusuf (12:111)`,
     highlight: [`detailed explanation of all things`]
   },
+  "14:5": {
+    surah: 14,
+    verse: 5,
+    arabic: `وَلَقَدْ أَرْسَلْنَا مُوسَىٰ بِآيَاتِنَا أَنْ أَخْرِجْ قَوْمَكَ مِنَ الظُّلُمَاتِ إِلَى النُّورِ وَذَكِّرْهُم بِأَيَّامِ اللَّهِ ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّكُلِّ صَبَّارٍ شَكُورٍ`,
+    translation: `<strong>"And We certainly sent Musa with Our signs, [saying], 'Bring out your people from darknesses into the light and <span class="highlight">remind them of the Days of Allah</span>.' Indeed in that are signs for every patient and grateful [soul]."</strong>`,
+    reference: `Surah Ibrāhīm (14:5)`,
+    highlight: [`remind them of the Days of Allah`]
+  },
   "14:48": {
     surah: 14,
     verse: 48,
@@ -86,6 +94,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"And We have sent down to you the Book as <span class="highlight">clarification for all things</span> and as guidance and mercy and good tidings for the Muslims."</strong>`,
     reference: `Surah An‑Nahl (16:89)`,
     highlight: [`clarification for all things`, `the Muslims`]
+  },
+  "17:6": {
+    surah: 17,
+    verse: 6,
+    arabic: `ثُمَّ رَدَدْنَا لَكُمُ الْكَرَّةَ عَلَيْهِمْ وَأَمْدَدْنَاكُم بِأَمْوَالٍ وَبَنِينَ وَجَعَلْنَاكُمْ أَكْثَرَ نَفِيرًا`,
+    translation: `<strong>"Then We gave you back the turn/return <span class="highlight">against</span> them, and We reinforced you with wealth and sons and made you more numerous in manpower."</strong>`,
+    reference: `Surah Al‑Isrā’ (17:6)`,
+    highlight: [`gave you back the turn/return`]
   },
   "17:12": {
     surah: 17,
@@ -135,6 +151,14 @@ window.QURAN_VERSES = {
     reference: `Surah An-Naml (27:82)`,
     highlight: [`the earth a Beast`,`mankind believed not with certainty in Our signs`]
   },
+  "27:83": {
+    surah: 27,
+    verse: 83,
+    arabic: `وَيَوْمَ نَحْشُرُ مِن كُلِّ أُمَّةٍ فَوْجًا مِّمَّن يُكَذِّبُ بِآيَاتِنَا فَهُمْ يُوزَعُونَ`,
+    translation: `<strong>"And [mention] the Day when We shall gather from every <span class="highlight">nation a party</span> of those who <span class="highlight">denied</span> Our signs, and they shall be driven [in rows]."</strong>`,
+    reference: `Surah An‑Naml (27:83)`,
+    highlight: []
+  },
   "32:5": {
     surah: 32,
     verse: 5,
@@ -159,6 +183,22 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Aḥzāb (33:63)`,
     highlight: [`It may be that the Hour is near`]
   },
+  "35:36": {
+    surah: 35,
+    verse: 36,
+    arabic: `وَالَّذِينَ كَفَرُوا لَهُمْ نَارُ جَهَنَّمَ لَا يُقْضَىٰ عَلَيْهِمْ فَيَمُوتُوا وَلَا يُخَفَّفُ عَنْهُم مِّنْ عَذَابِهَا ۚ كَذَٰلِكَ نَجْزِي كُلَّ كَفُورٍ`,
+    translation: `<strong>"And for those who <span class="highlight">disbelieve</span> will be the fire of <span class="highlight">Hell</span>. It is not decreed for them that they should <span class="highlight">die</span>, nor will its torment be lightened for them. Thus do We recompense every ungrateful one."</strong>`,
+    reference: `Surah Fāṭir (35:36)`,
+    highlight: []
+  },
+  "40:11": {
+    surah: 40,
+    verse: 11,
+    arabic: `قَالُوا رَبَّنَا أَمَتَّنَا اثْنَتَيْنِ وَأَحْيَيْتَنَا اثْنَتَيْنِ فَاعْتَرَفْنَا بِذُنُوبِنَا فَهَلْ إِلَىٰ خُرُوجٍ مِّن سَبِيلٍ`,
+    translation: `<strong>"They will say: 'Our Lord, You caused us to <span class="highlight">die twice</span> and <span class="highlight">gave</span> us <span class="highlight">life twice</span>; so we confess our sins. Is there any way out?'"</strong>`,
+    reference: `Surah Ghāfir (40:11)`,
+    highlight: []
+  },
   "40:16": {
     surah: 40,
     verse: 16,
@@ -166,6 +206,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"Whose is the dominion this Day? It is Allāh's, <span class="highlight">the One</span>, the Prevailing."</strong>`,
     reference: `Surah Ghāfir (40:16)`,
     highlight: [`the One`]
+  },
+  "44:56": {
+    surah: 44,
+    verse: 56,
+    arabic: `لَا يَذُوقُونَ فِيهَا الْمَوْتَ إِلَّا الْمَوْتَةَ الْأُولَىٰ ۖ وَوَقَاهُمْ عَذَابَ الْجَحِيمِ`,
+    translation: `<strong>"They will not taste <span class="highlight">death</span> therein except the <span class="highlight">first death</span>, and Allah will protect them from the punishment of the <span class="highlight">Hellfire</span>."</strong>`,
+    reference: `Surah Ad‑Dukhān (44:56)`,
+    highlight: []
   },
   "54:1": {
     surah: 54,
@@ -214,5 +262,21 @@ window.QURAN_VERSES = {
     translation: `<strong>"Say: He is Allāh, <span class="highlight">the One</span>. Allāh, the Self‑Subsisting."</strong>`,
     reference: `Surah Al‑Ikhlāṣ (112:1‑2)`,
     highlight: [`the One`]
+  },
+  "2:243": {
+    surah: 2,
+    verse: 243,
+    arabic: `أَلَمْ تَرَ إِلَى الَّذِينَ خَرَجُوا مِن دِيَارِهِمْ وَهُمْ أُلُوفٌ حَذَرَ الْمَوْتِ فَقَالَ لَهُمُ اللَّهُ مُوتُوا ثُمَّ أَحْيَاهُمْ ۚ إِنَّ اللَّهَ لَذُو فَضْلٍ عَلَى النَّاسِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَشْكُرُونَ`,
+    translation: `<strong>"Have you not considered those who left their homes in thousands for fear of death? Allah said to them, '<span class="highlight">Die</span>.' Then Allah restored them to <span class="highlight">life</span>. Indeed Allah is full of bounty to the people, but most of the people do not show gratitude."</strong>`,
+    reference: `Surah Al‑Baqarah (2:243)`,
+    highlight: []
+  },
+  "2:259": {
+    surah: 2,
+    verse: 259,
+    arabic: `أَوْ كَالَّذِي مَرَّ عَلَىٰ قَرْيَةٍ وَهِيَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا قَالَ أَنَّىٰ يُحْيِي هَٰذِهِ اللَّهُ بَعْدَ مَوْتِهَا ۖ فَأَمَاتَهُ اللَّهُ مِائَةَ عَامٍ ثُمَّ بَعَثَهُ ۖ قَالَ كَمْ لَبِثْتَ ۖ قَالَ لَبِثْتُ يَوْمًا أَوْ بَعْضَ يَوْمٍ ۖ قَالَ بَل لَّبِثْتَ مِائَةَ عَامٍ فَانظُرْ إِلَىٰ طَعَامِكَ وَشَرَابِكَ لَمْ يَتَسَنَّهْ ۖ وَانظُرْ إِلَىٰ حِمَارِكَ وَلِنَجْعَلَكَ آيَةً لِّلنَّاسِ ۖ وَانظُرْ إِلَى الْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا ۚ فَلَمَّا تَبَيَّنَ لَهُ قَالَ أَعْلَمُ أَنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ`,
+    translation: `<strong>"Or [consider] the one who passed by a township which had fallen into ruin. He said, 'How will Allah bring this to life after its death?' So Allah caused him to <span class="highlight">die for a hundred years</span>; then Allah revived him. Allah said, 'How long have you remained?' He said, 'I have remained a day or part of a day.' Allah said, 'No, you have remained a hundred years. Look at your food and your drink; it has not changed. And look at your donkey; and We will make you a sign for the people. And look at the bones [of the donkey] — how We raise them and then cover them with flesh.' And when it became clear to him, he said, 'I know that Allah is over all things competent.'"</strong>`,
+    reference: `Surah Al‑Baqarah (2:259)`,
+    highlight: []
   }
 };
