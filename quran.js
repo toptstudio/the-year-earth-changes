@@ -15,6 +15,30 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Baqarah (2:124)`,
     highlight: [`Imam`]
   },
+  "2:243": {
+    surah: 2,
+    verse: 243,
+    arabic: `أَلَمْ تَرَ إِلَى الَّذِينَ خَرَجُوا مِن دِيَارِهِمْ وَهُمْ أُلُوفٌ حَذَرَ الْمَوْتِ فَقَالَ لَهُمُ اللَّهُ مُوتُوا ثُمَّ أَحْيَاهُمْ ۚ إِنَّ اللَّهَ لَذُو فَضْلٍ عَلَى النَّاسِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَشْكُرُونَ`,
+    translation: `<strong>"Have you not considered those who left their homes in thousands for fear of death? Allah said to them, '<span class="highlight">Die</span>.' Then Allah restored them to <span class="highlight">life</span>. Indeed Allah is full of bounty to the people, but most of the people do not show gratitude."</strong>`,
+    reference: `Surah Al‑Baqarah (2:243)`,
+    highlight: [`Die` , `life`]
+  },
+  "2:259": {
+    surah: 2,
+    verse: 259,
+    arabic: `أَوْ كَالَّذِي مَرَّ عَلَىٰ قَرْيَةٍ وَهِيَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا قَالَ أَنَّىٰ يُحْيِي هَٰذِهِ اللَّهُ بَعْدَ مَوْتِهَا ۖ فَأَمَاتَهُ اللَّهُ مِائَةَ عَامٍ ثُمَّ بَعَثَهُ ۖ قَالَ كَمْ لَبِثْتَ ۖ قَالَ لَبِثْتُ يَوْمًا أَوْ بَعْضَ يَوْمٍ ۖ قَالَ بَل لَّبِثْتَ مِائَةَ عَامٍ فَانظُرْ إِلَىٰ طَعَامِكَ وَشَرَابِكَ لَمْ يَتَسَنَّهْ ۖ وَانظُرْ إِلَىٰ حِمَارِكَ وَلِنَجْعَلَكَ آيَةً لِّلنَّاسِ ۖ وَانظُرْ إِلَى الْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا ۚ فَلَمَّا تَبَيَّنَ لَهُ قَالَ أَعْلَمُ أَنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ`,
+    translation: `<strong>"Or [consider] the one who passed by a township which had fallen into ruin. He said, 'How will Allah bring this to life after its death?' So Allah caused him to <span class="highlight">die for a hundred years</span>; then Allah revived him. Allah said, 'How long have you remained?' He said, 'I have remained a day or part of a day.' Allah said, 'No, you have remained a hundred years. Look at your food and your drink; it has not changed. And look at your donkey; and We will make you a sign for the people. And look at the bones [of the donkey] — how We raise them and then cover them with flesh.' And when it became clear to him, he said, 'I know that Allah is over all things competent.'"</strong>`,
+    reference: `Surah Al‑Baqarah (2:259)`,
+    highlight: [`die for a hundred years`]
+  },
+  "3:30": {
+    surah: 3,
+    verse: 30,
+    arabic: `يَوْمَ تَجِدُ كُلُّ نَفْسٍ مَّا عَمِلَتْ مِنْ خَيْرٍ مُّحْضَرًا وَمَا عَمِلَتْ مِن سُوءٍ تَوَدُّ لَوْ أَنَّ بَيْنَهَا وَبَيْنَهُ أَمَدًا بَعِيدًا ۗ وَيُحَذِّرُكُمُ اللَّهُ نَفْسَهُ ۗ وَاللَّهُ رَءُوفٌ بِالْعِبَادِ`,
+    translation: `<strong>"On the Day when every soul will find present what it has done of <span class="highlight">good</span> and what it has done of <span class="highlight">evil</span>, it will wish that between itself and that [evil] was a <span class="highlight">great distance</span>. And Allah warns you of Himself, and Allah is compassionate to His servants."</strong>`,
+    reference: `Surah Al‑Imran (3:30)`,
+    highlight: [`good`, `evil`, `great distance`]
+  },
   "3:61": {
     surah: 3,
     verse: 61,
@@ -135,6 +159,22 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Anbiya (21:73)`,
     highlight: [`Imams`]
   },
+  "21:103": {
+    surah: 21,
+    verse: 103,
+    arabic: `لَا يَحْزُنُهُمُ الْفَزَعُ الْأَكْبَرُ وَتَتَلَقَّاهُمُ الْمَلَائِكَةُ هَٰذَا يَوْمُكُمُ الَّذِي كُنتُمْ تُوعَدُونَ`,
+    translation: `<strong>"The <span class="highlight">greatest terror</span> will not grieve them, and the angels will meet them, [saying], 'This is your <span class="highlight">Day</span> which you were promised.'"</strong>`,
+    reference: `Surah Al‑Anbiya (21:103)`,
+    highlight: [`greatest terror`, `Day`]
+  },
+  "21:105": {
+    surah: 21,
+    verse: 105,
+    arabic: `وَلَقَدْ كَتَبْنَا فِي الزَّبُورِ مِن بَعْدِ الذِّكْرِ أَنَّ الْأَرْضَ يَرِثُهَا عِبَادِيَ الصَّالِحُونَ`,
+    translation: `<strong>"And We have already written in the Psalms after the Reminder that the <span class="highlight">earth</span> is inherited by My <span class="highlight">righteous servants</span>."</strong> This verse is a direct promise that the Imams of the Ahl al‑Bayt and their true followers will inherit the earth, fulfilled through the Rajʿah and the ultimate victory of justice.`,
+    reference: `Surah Al‑Anbiya (21:105)`,
+    highlight: [`righteous servants`, `earth`]
+  },
   "22:47": {
     surah: 22,
     verse: 47,
@@ -166,6 +206,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"He arranges each matter from the heaven to the earth; then ascends to it on a <span class="highlight">day</span> when it was worth a <span class="highlight">thousand years</span> of those which <span class="highlight">you count.</span>"</strong>`,
     reference: `Surah As‑Sajdah (32:5)`,
     highlight: [`day`, `thousand years`, `you count`]
+  },
+  "32:21": {
+    surah: 32,
+    verse: 21,
+    arabic: `وَلَنُذِيقَنَّهُم مِّنَ الْعَذَابِ الْأَدْنَىٰ دُونَ الْعَذَابِ الْأَكْبَرِ لَعَلَّهُمْ يَرْجِعُونَ`,
+    translation: `<strong>"And We will surely let them taste the <span class="highlight">nearer punishment</span> before the <span class="highlight">greater punishment</span>, so that perhaps they may <span class="highlight">return</span> [to obedience]."</strong>`,
+    reference: `Surah As‑Sajdah (32:21)`,
+    highlight: [`nearer punishment`, `greater punishment`, `return`]
   },
   "33:33": {
     surah: 33,
@@ -215,6 +263,14 @@ window.QURAN_VERSES = {
     reference: `Surah Ad‑Dukhān (44:56)`,
     highlight: [`death`,`first death`,`Hellfire`]
   },
+  "52:47": {
+    surah: 52,
+    verse: 47,
+    arabic: `وَإِنَّ لِلَّذِينَ ظَلَمُوا عَذَابًا دُونَ ذَٰلِكَ وَلَٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ`,
+    translation: `<strong>"And indeed, for those who have <span class="highlight">wronged</span> is a <span class="highlight">punishment before</span> that, but most of them do not know."</strong> This refers to the pre‑Resurrection punishment — the Rajʿah — where the oppressors of the Ahl al‑Bayt will face divine retribution before the final Judgement.`,
+    reference: `Surah At‑Tur (52:47)`,
+    highlight: [`wronged`, `punishment before`]
+  },
   "54:1": {
     surah: 54,
     verse: 1,
@@ -247,6 +303,14 @@ window.QURAN_VERSES = {
     reference: `Surah An‑Nāzi‘āt (79:42–45)`,
     highlight: [`To your Lord is its finality`]
   },
+  "99:4": {
+    surah: 99,
+    verse: 4,
+    arabic: `يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا`,
+    translation: `<strong>"On that Day the <span class="highlight">earth</span> will <span class="highlight">recount</span> its news."</strong> This is the day when all deeds, hidden and manifest, will be brought to light.`,
+    reference: `Surah Az‑Zalzalah (99:4)`,
+    highlight: [`earth`, `recount`]
+  },
   "112:1": {
     surah: 112,
     verse: 1,
@@ -262,21 +326,5 @@ window.QURAN_VERSES = {
     translation: `<strong>"Say: He is Allāh, <span class="highlight">the One</span>. Allāh, the Self‑Subsisting."</strong>`,
     reference: `Surah Al‑Ikhlāṣ (112:1‑2)`,
     highlight: [`the One`]
-  },
-  "2:243": {
-    surah: 2,
-    verse: 243,
-    arabic: `أَلَمْ تَرَ إِلَى الَّذِينَ خَرَجُوا مِن دِيَارِهِمْ وَهُمْ أُلُوفٌ حَذَرَ الْمَوْتِ فَقَالَ لَهُمُ اللَّهُ مُوتُوا ثُمَّ أَحْيَاهُمْ ۚ إِنَّ اللَّهَ لَذُو فَضْلٍ عَلَى النَّاسِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَشْكُرُونَ`,
-    translation: `<strong>"Have you not considered those who left their homes in thousands for fear of death? Allah said to them, '<span class="highlight">Die</span>.' Then Allah restored them to <span class="highlight">life</span>. Indeed Allah is full of bounty to the people, but most of the people do not show gratitude."</strong>`,
-    reference: `Surah Al‑Baqarah (2:243)`,
-    highlight: [`Die` , `life`]
-  },
-  "2:259": {
-    surah: 2,
-    verse: 259,
-    arabic: `أَوْ كَالَّذِي مَرَّ عَلَىٰ قَرْيَةٍ وَهِيَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا قَالَ أَنَّىٰ يُحْيِي هَٰذِهِ اللَّهُ بَعْدَ مَوْتِهَا ۖ فَأَمَاتَهُ اللَّهُ مِائَةَ عَامٍ ثُمَّ بَعَثَهُ ۖ قَالَ كَمْ لَبِثْتَ ۖ قَالَ لَبِثْتُ يَوْمًا أَوْ بَعْضَ يَوْمٍ ۖ قَالَ بَل لَّبِثْتَ مِائَةَ عَامٍ فَانظُرْ إِلَىٰ طَعَامِكَ وَشَرَابِكَ لَمْ يَتَسَنَّهْ ۖ وَانظُرْ إِلَىٰ حِمَارِكَ وَلِنَجْعَلَكَ آيَةً لِّلنَّاسِ ۖ وَانظُرْ إِلَى الْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا ۚ فَلَمَّا تَبَيَّنَ لَهُ قَالَ أَعْلَمُ أَنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ`,
-    translation: `<strong>"Or [consider] the one who passed by a township which had fallen into ruin. He said, 'How will Allah bring this to life after its death?' So Allah caused him to <span class="highlight">die for a hundred years</span>; then Allah revived him. Allah said, 'How long have you remained?' He said, 'I have remained a day or part of a day.' Allah said, 'No, you have remained a hundred years. Look at your food and your drink; it has not changed. And look at your donkey; and We will make you a sign for the people. And look at the bones [of the donkey] — how We raise them and then cover them with flesh.' And when it became clear to him, he said, 'I know that Allah is over all things competent.'"</strong>`,
-    reference: `Surah Al‑Baqarah (2:259)`,
-    highlight: [`die for a hundred years`]
   }
 };
