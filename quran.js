@@ -3,15 +3,15 @@ window.QURAN_VERSES = {
     surah: 2,
     verse: 36,
     arabic: `فَأَزَلَّهُمَا الشَّيْطَانُ عَنْهَا فَأَخْرَجَهُمَا مِمَّا كَانَا فِيهِ ۖ وَقُلْنَا اهْبِطُوا بَعْضُكُمْ لِبَعْضٍ عَدُوٌّ ۖ وَلَكُمْ فِي الْأَرْضِ مُسْتَقَرٌّ وَمَتَاعٌ إِلَىٰ حِينٍ`,
-    translation: `And Satan caused them to slip out of it and brought them out of that they were in. And We said: '<strong>Go down, some of you as enemies to others, and for you on the earth is a dwelling place and provision for a time.</strong>'`,
+    translation: `<strong>And <span class="highlight">Satan</span> caused them to slip out of it and brought them out of that they <span class="highlight">were</span> in. And We said: 'Go down, some of you as <span class="highlight">enemies</span> to others, and for you on the <span class="highlight">earth</span> is a dwelling place and provision for a <span class="highlight">time</span>.</strong>'`,
     reference: `Surah Al‑Baqarah (2:36)`,
-    highlight: []
+    highlight: [`Satan` , `were` , `enemies` , `earth` , `time`]
   },
   "2:124": {
     surah: 2,
     verse: 124,
     arabic: `وَإِذِ ابْتَلَىٰ إِبْرَاهِيمَ رَبُّهُ بِكَلِمَاتٍ فَأَتَمَّهُنَّ ۖ قَالَ إِنِّي جَاعِلُكَ لِلنَّاسِ إِمَامًا`,
-    translation: `<strong>"And when Ibrahim was tried by his Lord with words and he fulfilled them, He said: 'I am making you an <span class="highlight">Imam</span> for mankind.'"</strong> Imamate is a divine covenant, higher than prophethood, granted after trials.`,
+    translation: `<strong>"And when Ibrahim was tried by his Lord with words and he fulfilled them, Allah said: 'I am making you an <span class="highlight">Imam</span> for mankind.'"</strong> Imamate is a divine covenant, higher than prophethood, granted after trials.`,
     reference: `Surah Al‑Baqarah (2:124)`,
     highlight: [`Imam`]
   },
@@ -43,9 +43,9 @@ window.QURAN_VERSES = {
     surah: 3,
     verse: 61,
     arabic: `فَمَنْ حَاجَّكَ فِيهِ مِن بَعْدِ مَا جَاءَكَ مِنَ الْعِلْمِ فَقُلْ تَعَالَوْا نَدْعُ أَبْنَاءَنَا وَأَبْنَاءَكُمْ وَنِسَاءَنَا وَنِسَاءَكُمْ وَأَنفُسَنَا وَأَنفُسَكُمْ ثُمَّ نَبْتَهِلْ فَنَجْعَل لَّعْنَتَ اللَّهِ عَلَى الْكَاذِبِينَ`,
-    translation: `<strong>"If anyone disputes this with you after knowledge has come, say: Come, let us call <span class="highlight">our sons</span> and your sons, our women and your women, <span class="highlight">ourselves</span> and yourselves, then pray and invoke Allah's curse upon the liars."</strong> The Prophet brought only Ali, Fatima, Hasan, and Husayn, identifying Ali as anfusana (our selves).`,
+    translation: `<strong>"If anyone disputes this with you after knowledge has come, say: Come, let us call <span class="highlight">our sons</span> and your sons, <span class="highlight">our women</span> and your women, <span class="highlight">ourselves</span> and yourselves, then pray and invoke Allah's curse upon the liars."</strong> The Prophet brought only Ali, Fatima, Hasan, and Husayn, identifying Ali as anfusana (our selves).`,
     reference: `Surah Al‑Imran (3:61)`,
-    highlight: [`our sons` ,`ourselves`]
+    highlight: [`our sons` ,`ourselves` ,`our women`]
   },
   "4:59": {
     surah: 4,
@@ -155,9 +155,9 @@ window.QURAN_VERSES = {
     surah: 21,
     verse: 73,
     arabic: `وَجَعَلْنَاهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا`,
-    translation: `<strong>"And We made them <span class="highlight">Imams</span> guiding by Our command."</strong>`,
+    translation: `<strong>"And We made <span class="highlight">them Imams</span> guiding by Our command."</strong>`,
     reference: `Surah Al‑Anbiya (21:73)`,
-    highlight: [`Imams`]
+    highlight: [`them Imams`]
   },
   "21:103": {
     surah: 21,
@@ -235,7 +235,7 @@ window.QURAN_VERSES = {
     surah: 35,
     verse: 36,
     arabic: `وَالَّذِينَ كَفَرُوا لَهُمْ نَارُ جَهَنَّمَ لَا يُقْضَىٰ عَلَيْهِمْ فَيَمُوتُوا وَلَا يُخَفَّفُ عَنْهُم مِّنْ عَذَابِهَا ۚ كَذَٰلِكَ نَجْزِي كُلَّ كَفُورٍ`,
-    translation: `<strong>"And for those who <span class="highlight">disbelieve</span> will be the fire of <span class="highlight">Hell</span>. It is not decreed for them that they should <span class="highlight">die</span>, nor will its torment be lightened for them. Thus do We recompense every ungrateful one."</strong>`,
+    translation: `<strong>"And for those who <span class="highlight">disbelieve</span> will be the fire of <span class="highlight">Hell</span>. It is <span class="highlight">not</span> decreed for them that they should <span class="highlight">die</span>, nor will its torment be lightened for them. Thus do We recompense every ungrateful one."</strong>`,
     reference: `Surah Fāṭir (35:36)`,
     highlight: [`disbelieve` ,`Hell` ,`die`]
   },
@@ -259,9 +259,9 @@ window.QURAN_VERSES = {
     surah: 44,
     verse: 56,
     arabic: `لَا يَذُوقُونَ فِيهَا الْمَوْتَ إِلَّا الْمَوْتَةَ الْأُولَىٰ ۖ وَوَقَاهُمْ عَذَابَ الْجَحِيمِ`,
-    translation: `<strong>"They will not taste <span class="highlight">death</span> therein except the <span class="highlight">first death</span>, and Allah will protect them from the punishment of the <span class="highlight">Hellfire</span>."</strong>`,
+    translation: `<strong>"They will <span class="highlight">not taste death</span> therein except the <span class="highlight">first death</span>, and Allah will protect them from the punishment of the <span class="highlight">Hellfire</span>."</strong>`,
     reference: `Surah Ad‑Dukhān (44:56)`,
-    highlight: [`death`,`first death`,`Hellfire`]
+    highlight: [`not taste death`,`first death`,`Hellfire`]
   },
   "52:47": {
     surah: 52,
