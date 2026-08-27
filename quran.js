@@ -83,9 +83,9 @@ window.QURAN_VERSES = {
     surah: 7,
     verse: 187,
     arabic: `يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْسَاهَا ۖ قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّي ۖ لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ ۚ ثَقُلَتْ فِي السَّمَاوَاتِ وَالْأَرْضِ ۚ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً ۗ يَسْأَلُونَكَ كَأَنَّكَ حَفِيٌّ عَنْهَا ۖ قُلْ إِنَّمَا عِلْمُهَا عِندَ اللَّهِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَعْلَمُونَ`,
-    translation: `<strong>"They ask you about the Hour, when will it occur? Say, 'Its knowledge is only with my Lord. None can reveal its time except Him. It is heavy upon the heavens and the earth. It will not come upon you except unexpectedly.' They ask you as if you were well-acquainted with it. Say, 'Its knowledge is only with Allah,<span class="highlight"> but most of the people do not know.</span>'"</strong>`,
+    translation: `<strong>"They ask you about the Hour, when will it occur? Say, 'Its knowledge is only with my Lord. None can reveal its time except Him. It is heavy upon <span class="highlight">the heavens</span> and <span class="highlight">the earth</span>. It will not come upon you except <span class="highlight">unexpectedly</span>.' They ask you as if you were well-acquainted with it. Say, 'Its knowledge is only with Allah,<span class="highlight"> but most of the people do not know.</span>'"</strong>`,
     reference: `Surah Al‑A‘rāf (7:187)`,
-    highlight: [`but most of the people do not know`]
+    highlight: [`unexpectedly` ,`but most of the people do not know` ,`the heavens` ,`the earth`]
   },
   "12:111": {
     surah: 12,
@@ -107,7 +107,7 @@ window.QURAN_VERSES = {
     surah: 14,
     verse: 48,
     arabic: `يَوْمَ تُبَدَّلُ الْأَرْضُ غَيْرَ الْأَرْضِ وَالسَّمَاوَاتُ وَبَرَزُوا لِلَّهِ الْوَاحِدِ الْقَهَّارِ`,
-    translation: `<strong>"On the <span class="highlight">Day</span> when the <span class="highlight">earth</span> will be changed to another <span class="highlight">earth,</span> and the heavens as well, and they will come forth before Allah, <span class="highlight">the One</span>, the Prevailing."</strong>`,
+    translation: `<strong>"On the <span class="highlight">Day</span> when the <span class="highlight">earth</span> will be changed to another <span class="highlight">earth,</span> and <span class="highlight">the heavens</span> as well, and they will come forth before Allah, <span class="highlight">the One</span>, the Prevailing."</strong>`,
     reference: `Surah Ibrahim (14:48)`,
     highlight: [`Day`, `earth`, `earth`, `the One`]
   },
@@ -151,6 +151,14 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Kahf (18:25)`,
     highlight: []
   },
+  "18:47": {
+    surah: 18,
+    verse: 47,
+    arabic: `وَيَوْمَ نُسَيِّرُ الْجِبَالَ وَتَرَى الْأَرْضَ بَارِزَةً وَحَشَرْنَاهُمْ فَلَمْ نُغَادِرْ مِنْهُمْ أَحَدًا`,
+    translation: `<strong>"And [warn of] the Day when We will <span class="highlight">remove the mountains</span> and you will see the <span class="highlight">earth prominent</span>, and We will gather them and <span class="highlight">not leave</span> behind from them anyone."</strong>`,
+    reference: `Surah Al‑Kahf (18:47)`,
+    highlight: [`remove the mountains`, `earth prominent`]
+  },
   "21:73": {
     surah: 21,
     verse: 73,
@@ -183,6 +191,14 @@ window.QURAN_VERSES = {
     reference: `Surah Al‑Hajj (22:47)`,
     highlight: [`day`, `thousand years`, `you count`]
   },
+  "24:55": {
+    surah: 24,
+    verse: 55,
+    arabic: `وَعَدَ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَعَمِلُوا الصَّالِحَاتِ لَيَسْتَخْلِفَنَّهُمْ فِي الْأَرْضِ كَمَا اسْتَخْلَفَ الَّذِينَ مِن قَبْلِهِمْ وَلَيُمَكِّنَنَّ لَهُمْ دِينَهُمُ الَّذِي ارْتَضَىٰ لَهُمْ وَلَيُبَدِّلَنَّهُم مِّن بَعْدِ خَوْفِهِمْ أَمْنًا ۚ يَعْبُدُونَنِي لَا يُشْرِكُونَ بِي شَيْئًا ۚ وَمَن كَفَرَ بَعْدَ ذَٰلِكَ فَأُولَٰئِكَ هُمُ الْفَاسِقُونَ`,
+    translation: `<strong>"Allah has promised those who have <span class="highlight">believed</span> among you and done <span class="highlight">righteous deeds</span> that He will surely grant them <span class="highlight">succession</span> upon <span class="highlight">the earth</span> just as He granted it to those before them, and that He will surely establish for them <span class="highlight">their religion</span> which He has preferred for them, and that He will surely substitute for them, after their fear, <span class="highlight">security</span>. They worship Me, not associating anything with Me. But whoever disbelieves after that — then those are the defiantly disobedient."</strong>`,
+    reference: `Surah An‑Nūr (24:55)`,
+    highlight: [`believed`, `righteous deeds`, `succession`, `security`]
+  },
   "27:82": {
     surah: 27,
     verse: 82,
@@ -198,6 +214,22 @@ window.QURAN_VERSES = {
     translation: `<strong>"And [mention] the Day when We shall gather from <span class="highlight">every nation a party</span> of those who <span class="highlight">denied</span> Our signs, and they shall be driven [in rows]."</strong>`,
     reference: `Surah An‑Naml (27:83)`,
     highlight: [`every nation a party`,`denied`]
+  },
+  "28:5": {
+    surah: 28,
+    verse: 5,
+    arabic: `وَنُرِيدُ أَن نَّمُنَّ عَلَى الَّذِينَ اسْتُضْعِفُوا فِي الْأَرْضِ وَنَجْعَلَهُمْ أَئِمَّةً وَنَجْعَلَهُمُ الْوَارِثِينَ`,
+    translation: `<strong>"And We wanted to confer favor upon those who were <span class="highlight">oppressed</span> in the land and make them <span class="highlight">leaders</span> and make them <span class="highlight">inheritors</span>."</strong>`,
+    reference: `Surah Al‑Qaṣaṣ (28:5)`,
+    highlight: [`oppressed`, `leaders`, `inheritors`]
+  },
+  "28:6": {
+    surah: 28,
+    verse: 6,
+    arabic: `وَنُمَكِّنَ لَهُمْ فِي الْأَرْضِ وَنُرِيَ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا مِنْهُم مَّا كَانُوا يَحْذَرُونَ`,
+    translation: `<strong>"And <span class="highlight">establish them</span> in the land and show <span class="highlight">Pharaoh and Haman</span> and their soldiers through them that which they had <span class="highlight">feared</span>."</strong>`,
+    reference: `Surah Al‑Qaṣaṣ (28:6)`,
+    highlight: [`establish them`, `Pharaoh and Haman`, `feared`]
   },
   "32:5": {
     surah: 32,
@@ -255,6 +287,14 @@ window.QURAN_VERSES = {
     reference: `Surah Ghāfir (40:16)`,
     highlight: [`the One`]
   },
+  "44:43-44": {
+    surah: 44,
+    verse: "43-44",
+    arabic: `إِنَّ شَجَرَةَ الزَّقُّومِ ۝ طَعَامُ الْأَثِيمِ`,
+    translation: `<strong>"Indeed, the <span class="highlight">tree of zaqqūm</span> is <span class="highlight">food</span> for the <span class="highlight">sinful</span>."</strong>`,
+    reference: `Surah Ad‑Dukhān (44:43‑44)`,
+    highlight: [`tree of zaqqūm`, `food`, `sinful`]
+  },
   "44:56": {
     surah: 44,
     verse: 56,
@@ -262,6 +302,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"They will <span class="highlight">not taste death</span> therein except the <span class="highlight">first death</span>, and Allah will protect them from the punishment of the <span class="highlight">Hellfire</span>."</strong>`,
     reference: `Surah Ad‑Dukhān (44:56)`,
     highlight: [`not taste death`,`first death`,`Hellfire`]
+  },
+  "50:42": {
+    surah: 50,
+    verse: 42,
+    arabic: `يَوْمَ يَسْمَعُونَ الصَّيْحَةَ بِالْحَقِّ ۚ ذَٰلِكَ يَوْمُ الْخُرُوجِ`,
+    translation: `<strong>"The Day they will hear the <span class="highlight">shout</span> with truth — that is the <span class="highlight">Day of Emergence</span>."</strong>`,
+    reference: `Surah Qāf (50:42)`,
+    highlight: [`shout`, `Day of Emergence`]
   },
   "52:47": {
     surah: 52,
@@ -302,6 +350,14 @@ window.QURAN_VERSES = {
     translation: `<strong>"They ask you about the Hour, 'When will it be?' In what [capacity] are you to mention it? <span class="highlight">To your Lord is its finality.</span> You are only a warner for those who fear it."</strong>`,
     reference: `Surah An‑Nāzi‘āt (79:42–45)`,
     highlight: [`To your Lord is its finality`]
+  },
+  "88:6": {
+    surah: 88,
+    verse: 6,
+    arabic: `لَيْسَ لَهُمْ طَعَامٌ إِلَّا مِنْ ضَرِيعٍ`,
+    translation: `<strong>"They will have no <span class="highlight">food</span> except from a <span class="highlight">bitter, thorny plant</span> ḍarīʿ."</strong>`,
+    reference: `Surah Al‑Ghāshiyah (88:6)`,
+    highlight: [`food`, `bitter, thorny plant`]
   },
   "99:4": {
     surah: 99,
