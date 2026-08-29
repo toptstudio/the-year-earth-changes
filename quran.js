@@ -59,7 +59,7 @@ window.QURAN_VERSES = {
     surah: 5,
     verse: 55,
     arabic: `إِنَّمَا وَلِيُّكُمُ اللَّهُ وَرَسُولُهُ وَالَّذِينَ آمَنُوا الَّذِينَ يُقِيمُونَ الصَّلَاةَ وَيُؤْتُونَ الزَّكَاةَ وَهُمْ رَاكِعُونَ`,
-    translation: `<strong>"Your guardian (Wali) is none but Allah, His Messenger, and <span class="highlight">those who</span> have believed — who establish prayer and give <span class="highlight">zakah while bowing</span> (in prayer)."</strong> This verse was revealed when Imam Ali gave his ring as charity while in ruku' (bowing).`,
+    translation: `<strong>"Your guardian (Wali) is none but Allah, His Messenger, and <span class="highlight">those who</span> have believed — who establish prayer and give <span class="highlight">zakah while bowing</span> in prayer."</strong> This verse was revealed when Imam Ali gave his ring as charity while in (ruku') bowing.`,
     reference: `Surah Al‑Ma'idah (5:55)`,
     highlight: [`those who`,`zakah while bowing`]
   },
@@ -67,7 +67,7 @@ window.QURAN_VERSES = {
     surah: 5,
     verse: 67,
     arabic: `يَا أَيُّهَا الرَّسُولُ بَلِّغْ مَا أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ۖ وَإِن لَّمْ تَفْعَلْ فَمَا بَلَّغْتَ رِسَالَتَهُ ۚ وَاللَّهُ يَعْصِمُكَ مِنَ النَّاسِ`,
-    translation: `<strong>"O Messenger, announce that which has been revealed to you from your Lord, and if you do not, then you have not conveyed His message. And Allah will protect you from the people."</strong>`,
+    translation: `<strong>"O Messenger, announce that which has been revealed to you from your Lord, and if you do not, then you have not conveyed His message. And Allah will <span class="highlight">protect you from the people</span>."</strong>`,
     reference: `Surah Al‑Ma'idah (5:67)`,
     highlight: []
   },
@@ -107,7 +107,7 @@ window.QURAN_VERSES = {
     surah: 14,
     verse: 48,
     arabic: `يَوْمَ تُبَدَّلُ الْأَرْضُ غَيْرَ الْأَرْضِ وَالسَّمَاوَاتُ وَبَرَزُوا لِلَّهِ الْوَاحِدِ الْقَهَّارِ`,
-    translation: `<strong>"On the <span class="highlight">Day</span> when the <span class="highlight">earth</span> will be changed to another <span class="highlight">earth,</span> and <span class="highlight">the heavens</span> as well, and they will come forth before Allah, <span class="highlight">the One</span>, the Prevailing."</strong>`,
+    translation: `<strong>"On the <span class="highlight">Day</span> when the <span class="highlight">earth</span> will be changed to another <span class="highlight">earth</span>, and <span class="highlight">the heavens</span> as well, and they will come forth before Allah, <span class="highlight">the One</span>, the Prevailing."</strong>`,
     reference: `Surah Ibrahim (14:48)`,
     highlight: [`Day`, `earth`, `earth`, `the One`]
   },
